@@ -48,9 +48,6 @@ This repository is a complete guide and practice space for mastering Python — 
 
 ---
 
-
----
-
 ## 📚 My Learning Journey
 
 This repository is part of my mission to become a top-tier **Machine Learning / AI Engineer**.  
@@ -85,7 +82,3 @@ Let’s learn and grow together!
 ---
 
 > Made with ❤️ by [Mirza Yasir Abdullah Baig](https://github.com/mirzayasirabdullahbaig07)
-
-=======
-# Advanced-Python
->>>>>>> d918114388faabc75f5801b2aa1ad417e2b83c33
