@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🐍 Advanced Python
 
 Welcome to the **Advanced Python** repository!  
