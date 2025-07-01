@@ -162,3 +162,55 @@ print("not(x < 15 and y < 25):", not(x < 15 and y < 25))  # False
 #   0   1     0
 #   1   0     0
 #   1   1     0
+
+
+
+# Identity Operators
+# Identity operators compare the memory locations of two objects 
+# (i.e., whether they are the same object in memory).
+
+# is       - Returns True if both refer to the same object     ---> x is y
+# is not   - Returns True if they do not refer to the same object  ---> x is not y
+
+x = [1, 2, 3]
+y = x
+z = [1, 2, 3]
+
+print(x is y)      # Output: True  — same memory location
+print(x is z)      # Output: False — different memory even if content is the same
+print(x is not z)  # Output: True
+
+# ---------------------------------------------
+
+# Membership Operators
+# Membership operators are used to check whether a value exists in a sequence 
+# like a list, tuple, or string.
+
+# in       - Returns True if value exists in the sequence      ---> 'a' in 'apple' -> True
+# not in   - Returns True if value does not exist in sequence  ---> 'x' not in 'apple' -> True
+
+print('a' in 'apple')     # Output: True
+print('x' not in 'apple') # Output: True
+
+# ---------------------------------------------
+
+# Bitwise Operators
+# Bitwise operators perform operations on binary (bit-level) representations of integers.
+
+# Operator    Description          Example        Binary Operation
+# &           Bitwise AND          5 & 3 = 1      0101 & 0011 = 0001
+# |           Bitwise OR           5 | 3 = 7      0101 | 0011 = 0111
+# ^           Bitwise XOR          5 ^ 3 = 6      0101 ^ 0011 = 0110
+# ~           Bitwise NOT          ~5 = -6        ~0101 = -(0101 + 1)
+# <<          Left Shift           5 << 1 = 10    0101 << 1 = 1010
+# >>          Right Shift          5 >> 1 = 2     0101 >> 1 = 0010
+
+a = 5  # Binary: 0101
+b = 3  # Binary: 0011
+
+print(a & b)    # Output: 1  (AND)
+print(a | b)    # Output: 7  (OR)
+print(a ^ b)    # Output: 6  (XOR)
+print(~a)       # Output: -6 (NOT)
+print(a << 1)   # Output: 10 (Left shift by 1)
+print(a >> 1)   # Output: 2  (Right shift by 1)
