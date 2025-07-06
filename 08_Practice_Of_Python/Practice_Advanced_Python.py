@@ -45,7 +45,7 @@ print(f"the sum of two numbers are {result}")
 # Q5. Convert a string to an integer and vice versa.
 str_int = "123"
 print(int(str_int))
-
+# for int to str
 int_str = 123
 print(str(int_str))
 
