@@ -134,3 +134,6 @@ print("Compound Interest Amount:", A)
 radius = float(input("Enter the radius: "))
 area_circle = 3.14 * radius ** 2
 print("Area of the circle =", area_circle)
+
+
+# the qss will be added soon
