@@ -137,3 +137,4 @@ print("Area of the circle =", area_circle)
 
 
 # the qss will be added soon
+# the remaining qs will be updated
