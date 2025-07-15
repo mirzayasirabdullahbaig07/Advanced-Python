@@ -1,108 +1,88 @@
-# ---------------------------------------------
-# Conceptual Questions and Answers with Logic
-# ---------------------------------------------
+# -------------------------------------------------------------
+# Conceptual Python Questions and Answers with Explanations
+# -------------------------------------------------------------
 
-# Q1: Write a program that prints a path like this:
-# C:\Users\John\Desktop\File.txt using the appropriate escape sequences.
+# -------------------------------
+# File Paths and String Quotes
+# -------------------------------
 
-# Solution:
-# We use the 'sep' parameter in print() to insert backslashes between each part.
+# Q1: Print the following path using escape sequences:
+#     C:\Users\John\Desktop\File.txt
 print("C:", "Users", "John", "Desktop", "File.txt", sep="\\")
 
-# Output: C:\Users\John\Desktop\File.txt
-
-
-# Q2: Write a Python program that prints a message with a double-quote
-# character inside it. Example: He said, "Hello!".
-
-# Solution:
-# Use single quotes to wrap the string, allowing double quotes inside without escaping.
+# Q2: Print a message containing double quotes: He said, "Hello!".
 msg = 'He said, "Hello!"'
 print(msg)
 
-# Output: He said, "Hello!"
-
-
-# Q3: Create a program that prints a message containing both single and
-# double quotes, like this: She said, 'It's cold'.
-
-# Solution:
-# Use double quotes to wrap the string and single quotes inside, including an apostrophe in "It's".
+# Q3: Print a message containing both single and double quotes:
+#     She said, 'It's cold'.
 msg2 = "She said, 'It's cold'."
 print(msg2)
 
-# Output: She said, 'It's cold'.
+# -------------------------------
+# Input, Output, and Conversion
+# -------------------------------
 
-
-# Q4. Write a Python program to add two numbers entered by the user.
+# Q4: Add two numbers entered by the user.
 num1 = int(input("Enter the 1st number: "))
 num2 = int(input("Enter the 2nd number: "))
 result = num1 + num2
-print(f"The sum of two numbers is {result}")
+print(f"The sum of the two numbers is: {result}")
 
-
-# Q5. Convert a string to an integer and vice versa.
+# Q5: Convert a string to an integer and vice versa.
 str_num = "123"
-print(int(str_num))  # string to int
+print(int(str_num))  # String to integer
 
 int_num = 123
-print(str(int_num))  # int to string
+print(str(int_num))  # Integer to string
 
-
-# Q6. Write a Python program to calculate the area of a rectangle using user input for length and width.
+# Q6: Calculate the area of a rectangle using user input.
 length = int(input("Enter the length: "))
 width = int(input("Enter the width: "))
 area = length * width
-print(f"The area of the rectangle is {area}")
+print(f"The area of the rectangle is: {area}")
 
-
-# Q7. Write a Python program to calculate the average of three numbers entered by the user.
+# Q7: Calculate the average of three numbers entered by the user.
 n1 = int(input("Enter the first number: "))
 n2 = int(input("Enter the second number: "))
 n3 = int(input("Enter the third number: "))
 average = (n1 + n2 + n3) / 3
-print(f"The average of the numbers is {average}")
+print(f"The average is: {average}")
 
-
-# Q8. Convert a float to an integer and vice versa.
+# Q8: Convert between float and integer.
 float_val = 353.322
-print(int(float_val))  # float to int
+print(int(float_val))  # Float to int
 
 int_val = 228392
-print(float(int_val))  # int to float
+print(float(int_val))  # Int to float
 
-
-# Q9. Write a program that converts a temperature in Fahrenheit to Celsius.
-# The formula is: Celsius = (Fahrenheit - 32) * 5/9.
-fahrenheit = 30
+# Q9: Convert Fahrenheit to Celsius.
+fahrenheit = float(input("Enter temperature in Fahrenheit: "))
 celsius = (fahrenheit - 32) * 5 / 9
-print(celsius)
+print(f"Temperature in Celsius: {celsius}")
 
-
-# Q10. Calculate sum of 5 subjects and Find percentage.
+# Q10: Calculate the total and percentage from 5 subjects.
 marks = [23, 42, 53, 65, 32]
 total = sum(marks)
-percentage = (total / (5 * 100)) * 100  # assuming each subject is out of 100
+percentage = (total / 500) * 100  # assuming each subject is out of 100
 print("Total Marks =", total)
 print("Percentage =", percentage)
 
-
-# Q11. Ask number of games played in a tournament. Ask the user number of
-# games won and number of games lost. Calculate number of tie and total
-# points. (1 win = 4 points, 1 tie = 2 points)
+# Q11: Tournament points calculator.
+# 1 win = 4 points, 1 tie = 2 points
 games = int(input("Enter the total number of games: "))
-wins = int(input("Enter number of wins: "))
-losses = int(input("Enter number of losses: "))
+wins = int(input("Enter the number of wins: "))
+losses = int(input("Enter the number of losses: "))
 ties = games - (wins + losses)
 points = (wins * 4) + (ties * 2)
-print(f"Number of tie games = {ties}")
-print(f"Total points = {points}")
+print(f"Tied games: {ties}")
+print(f"Total points: {points}")
 
+# -------------------------------
+# Arithmetic & Assignment Ops
+# -------------------------------
 
-# ARITHMETIC & ASSIGNMENT
-# Q12. Write a Python program that takes two numbers as input and
-# performs the following operations: addition, subtraction, multiplication,
-# division, and modulus. Display the results.
+# Q12: Perform arithmetic operations on two user-input numbers.
 x = int(input("Enter first number: "))
 y = int(input("Enter second number: "))
 print("Addition:", x + y)
@@ -111,30 +91,61 @@ print("Multiplication:", x * y)
 print("Division:", x / y)
 print("Modulus:", x % y)
 
-
-# Q13. Write a Python program to swap the values of two variables without using a temporary variable.
+# Q13: Swap two variables without a temporary variable.
 a = 2
 b = 5
 a, b = b, a
 print("a =", a)
 print("b =", b)
 
-
-# Q14. Write a Python program to calculate the compound interest for a
-# given principal, rate of interest, and time period. Ask everything from the user.
+# Q14: Calculate compound interest.
 P = float(input("Enter the principal amount: "))
 R = float(input("Enter the rate of interest: "))
 T = float(input("Enter the time (in years): "))
 A = P * (1 + R / 100) ** T
 print("Compound Interest Amount:", A)
 
-
-# Q15. Write a Python program that takes the radius of a circle as input and calculates its area.
-# Use the formula: Area = 3.14 * r^2.
+# Q15: Calculate the area of a circle.
 radius = float(input("Enter the radius: "))
 area_circle = 3.14 * radius ** 2
 print("Area of the circle =", area_circle)
 
+# -------------------------------
+# Comparison & Logical Ops
+# -------------------------------
 
-# the qss will be added soon
-# the remaining qs will be updated
+# Q16: Output of comparison
+x = 5
+y = 3
+print(x > y)  # True
+
+# Q17:
+a = 10
+b = 20
+c = 30
+print(a < b and b < c)  # True
+
+# Q18:
+p = True
+q = False
+print(not p or q)  # False
+
+# Q19:
+num1 = 15
+num2 = 10
+print(num1 == num2 or num1 > num2)  # True
+
+# Q20:
+m = 8
+n = 6
+print(m >= n and n != m)  # True
+
+# Q21:
+a = 5
+b = 5
+c = 10
+print(a <= b and b != c)  # True
+
+# Q22:
+num = 25
+print(num % 2 == 0)  # False → 25 is odd
