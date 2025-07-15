@@ -149,3 +149,57 @@ print(a <= b and b != c)  # True
 # Q22:
 num = 25
 print(num % 2 == 0)  # False → 25 is odd
+
+# =====================================================
+# If-Else Practice Questions (Q23 – Q26)
+# =====================================================
+
+# -----------------------------------------------------
+# Q23. Check if a number is positive or negative
+# (Note: Consider 0 as positive)
+# -----------------------------------------------------
+num = int(input("Enter an integer: "))
+
+if num >= 0:
+    print("The number is positive.")
+else:
+    print("The number is negative.")
+
+# -----------------------------------------------------
+# Q24. Check if a character is a vowel or consonant
+# (Use multiple OR conditions)
+# -----------------------------------------------------
+char = input("Enter a single character: ").lower()
+
+if char == 'a' or char == 'e' or char == 'i' or char == 'o' or char == 'u':
+    print("The character is a vowel.")
+else:
+    print("The character is a consonant.")
+
+# -----------------------------------------------------
+# Q25. Check if the first number is divisible by the second
+# -----------------------------------------------------
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+if num2 == 0:
+    print("Error: Division by zero is not allowed.")
+elif num1 % num2 == 0:
+    print(f"{num1} is divisible by {num2}.")
+else:
+    print(f"{num1} is not divisible by {num2}.")
+
+# -----------------------------------------------------
+# Q26. Check exam eligibility based on attendance
+# Rule: Attendance must be at least 75%
+# -----------------------------------------------------
+classes_held = int(input("Enter the total number of classes held: "))
+classes_attended = int(input("Enter the number of classes attended: "))
+
+attendance_percentage = (classes_attended / classes_held) * 100
+print(f"Attendance Percentage: {attendance_percentage:.2f}%")
+
+if attendance_percentage >= 75:
+    print(" The student is allowed to sit in the exam.")
+else:
+    print(" The student is NOT allowed to sit in the exam.")
