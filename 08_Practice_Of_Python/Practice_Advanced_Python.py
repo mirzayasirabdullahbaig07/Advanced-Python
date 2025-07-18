@@ -203,3 +203,25 @@ if attendance_percentage >= 75:
     print(" The student is allowed to sit in the exam.")
 else:
     print(" The student is NOT allowed to sit in the exam.")
+
+# IF - ELIF - ELSE
+#Q27. Write a program to check if the number is ODD, EVEN or Equal to Zero.
+num = int(input("enter the number = "))
+
+if num == 0:
+    print("The number is zero.")
+elif num % 2 == 0:
+    print("The number is even.")
+else:
+    print("The number is odd.")
+
+# Q28. Write a program to check if number is divisible by 2 and 3 but not 8.
+addNum = int(input("enter the number = "))
+
+if addNum % 2 == 0 and addNum % 3 == 0 and addNum % 8 != 0:
+    print("The number is divisible by 2 and 3 but NOT by 8.")
+else:
+    print("Condition not satisfied.")
+
+
+
