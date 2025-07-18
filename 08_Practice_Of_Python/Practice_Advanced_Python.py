@@ -224,4 +224,31 @@ else:
     print("Condition not satisfied.")
 
 
+# Q29. Write a program to print the last digit of a number. (NOT A IF ELSE
+# QUESTION)
+# Example 1
+# Input: 45321
+# Output: 1
+# Example 2
+# Input: 459094
+# Output: 4
 
+numinput = 13283429
+num = numinput % 10
+print(num)
+
+# second method
+a = numinput[-1]
+print(a)
+
+
+# Q30. Write a program to check if the last digit of a number is divisible by 5 or not.
+
+num = 110030209221
+num1 = num % 10
+print(num1)
+
+if num1 % 5 == 0:
+    print("the num is divible by 5")
+else:
+    print("number is not divible by 5")
