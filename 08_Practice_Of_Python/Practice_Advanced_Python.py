@@ -252,3 +252,31 @@ if num1 % 5 == 0:
     print("the num is divible by 5")
 else:
     print("number is not divible by 5")
+
+# Q31. Calculate final bill amount after discount
+
+# Ask user for the final amount
+amount = float(input("Enter bill amount: Rs. "))
+
+# Apply discount based on amount
+if amount >= 50000:
+    discount = 30
+elif amount >= 40000:
+    discount = 25
+elif amount >= 30000:
+    discount = 20
+elif amount >= 10000:
+    discount = 10
+elif amount >= 1:
+    discount = 0
+else:
+    print("Invalid amount!")
+    discount = None
+
+# Calculate final bill and display result
+if discount is not None:
+    discount_amount = (discount / 100) * amount
+    final_bill = amount - discount_amount
+    print(f"You got {discount}% discount")
+    print(f"Your final bill is Rs. {final_bill:.2f}")
+
