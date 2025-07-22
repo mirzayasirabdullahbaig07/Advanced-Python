@@ -253,7 +253,18 @@ if num1 % 5 == 0:
 else:
     print("number is not divible by 5")
 
-# Q31. Calculate final bill amount after discount
+# Q31. Write a program to calculate bill. Ask the final amount from the user.
+# You have to give discount and print the final bill after discount.
+# 50000 above - 30% discount
+# 40000 - 49999 - 25% discount
+# 30000 - 39999 - 20% discount
+# 10000 - 29999 - 10% discount
+# 1 - 9999 - No discount
+# Print the discount and the final amount to be paid.
+# Example 1
+# Enter bill amount = 80000
+# You got 30% discount
+# Your final bill is Rs. 56000
 
 # Ask user for the final amount
 amount = float(input("Enter bill amount: Rs. "))
@@ -279,4 +290,23 @@ if discount is not None:
     final_bill = amount - discount_amount
     print(f"You got {discount}% discount")
     print(f"Your final bill is Rs. {final_bill:.2f}")
+
+# Q32. Ask 4 numbers from the user. Make sure all the numbers entered by user are different. Then print which number is the smallest.
+
+print("Enter 4 different numbers:")
+
+a = int(input("Number 1: "))
+b = int(input("Number 2: "))
+c = int(input("Number 3: "))
+d = int(input("Number 4: "))
+
+# Check if all numbers are different
+if len({a, b, c, d}) != 4:
+    print("Error: All numbers must be different.")
+else:
+    smallest = min(a, b, c, d)
+    print(f"The smallest number is: {smallest}")
+
+
+
 
