@@ -323,3 +323,26 @@ elif number % 5 == 0:
     print("bizz")
 else:
     print(number)
+
+# Q34. A student will not be allowed to sit in exam if his/her attendance is
+# less than 75%.
+# a. Take following input from user
+# i. Number of classes held
+# ii. Number of classes attended.
+# b. Print percentage of class attended
+# c. Print Is student is allowed to sit in exam or not.
+
+# a. Take input from user
+classes_held = int(input("Enter the number of classes held: "))
+classes_attended = int(input("Enter the number of classes attended: "))
+
+# b. Calculate percentage
+attendance_percentage = (classes_attended / classes_held) * 100
+print(f"Attendance Percentage: {attendance_percentage:.2f}%")
+
+# c. Check eligibility
+if attendance_percentage >= 75:
+    print(" Student is allowed to sit in the exam.")
+else:
+    print(" Student is NOT allowed to sit in the exam.")
+
