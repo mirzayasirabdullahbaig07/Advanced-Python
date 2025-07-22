@@ -307,6 +307,19 @@ else:
     smallest = min(a, b, c, d)
     print(f"The smallest number is: {smallest}")
 
+# Q33 Ask a number from a user:
+# print 'fizz' if number is divisble by 3.
+# print 'bizz' if number is divisble by 5.
+# print 'fizzbizz' if number is divisble by 3 and 5.
+# print the number itself if none of the conditions are true.
 
+number = int(input("enter the number = "))
 
-
+if number % 3 == 0 and number % 5 == 0:
+    print("fizzbizz")
+elif number % 3 == 0 :
+    print("fizz")
+elif number % 5 == 0:
+    print("bizz")
+else:
+    print(number)
