@@ -346,3 +346,16 @@ if attendance_percentage >= 75:
 else:
     print(" Student is NOT allowed to sit in the exam.")
 
+# Q35 Take three numbers as input from user and print which one is greater or they are equal
+num1 = int(input("Enter number 1: "))
+num2 = int(input("Enter number 2: "))
+num3 = int(input("Enter number 3: "))
+
+if num1 == num2 == num3:
+    print("All numbers are equal.")
+elif num1 >= num2 and num1 >= num3:
+    print("Number 1 is greatest.")
+elif num2 >= num1 and num2 >= num3:
+    print("Number 2 is greatest.")
+else:
+    print("Number 3 is greatest.")
