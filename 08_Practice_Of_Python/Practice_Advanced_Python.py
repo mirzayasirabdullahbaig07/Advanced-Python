@@ -360,4 +360,6 @@ elif num2 >= num1 and num2 >= num3:
 else:
     print("Number 3 is greatest.")
 
-## Q36. T
+
+
+# the remaining questions will be added here
