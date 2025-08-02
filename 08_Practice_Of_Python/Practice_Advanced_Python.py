@@ -360,4 +360,24 @@ elif num2 >= num1 and num2 >= num3:
 else:
     print("Number 3 is greatest.")
 
-# Q36 
+# Q36 Take Salary as input from User and Update the salary of an employee.
+# salary less than 10,000, 5 % increment
+# salary between 10,000 and 20, 000, 10 % increment
+# salary between 20,000 and 50,000, 15 % increment
+# salary more than 50,000, 20 % increment
+input_salary = int(input("enter the salary =  "))
+if input_salary > 100000:
+    print("then 5 increment")
+elif input_salary < 100000 and input_salary > 200000:
+    print("the salary is increment by 10 percent ")
+elif input_salary < 200000 and input_salary > 500000:
+    print("then the increment is 15 percent")
+elif input_salary < 500000:
+    print("then the increment is 20 percent")
+else:
+    print("enter correct value")
+
+# must do it again
+
+# 
+                         
