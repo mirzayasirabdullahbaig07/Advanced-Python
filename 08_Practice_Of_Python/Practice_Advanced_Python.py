@@ -691,3 +691,34 @@ table_ = int(input("enter the number = "))
 for i in range(1, 11):
     table1_ = table_ * i
     print(f"{table_} * {i} = {table1_}")
+
+
+
+# Q64. Calculate factorial of a number entered by user.
+# Example:
+# Enter a number = 5
+# Factorial of a number means product of all the numbers from 1 to that
+# number.
+# 5 factorial = 5 x 4 x 3 x 2 x 1
+# Output = 120
+
+num = int(input("enter the number = "))
+factorial = 1
+for i in range(1, num + 1):
+    factorial = factorial * i
+print(f"the value of the factorial is = {factorial}")
+
+
+# Q65. Ask to numbers x and y from the user. If x<y then print all the
+# numbers from x to y, but if y<x then print all the numbers from y to x.
+
+x = int(input("Enter the first number: "))
+y = int(input("Enter the second number: "))
+
+if x < y:
+    for i in range(x, y + 1):
+        print(i)
+else:
+    for i in range(y, x + 1):
+        print(i)
+        
