@@ -558,3 +558,73 @@ while i <= 50:
 print(f"the sum is {num}")
 
 
+# Q50. Calculate how many numbers are divisible by 6 and 7 between 1 to
+# 200.
+i = 1
+count = 0
+
+while i <= 200:
+    if i % 6 == 0 and i % 7 == 0:
+        count = count + 1
+    i = i + 1
+print(f"the count is {count}")
+
+# Q51. Ask a number from user. Print the multiplication table of that number.
+# Example
+# Enter a number = 8
+# 8 x 1 = 8
+# 8 x 2 = 16
+# 8 x 3 = 24
+# 8 x 10 = 80
+
+enter_ = int(input("enter the number = "))
+i = 1
+
+table = 1
+
+while i <= 10:
+    table = enter_ * i 
+    print(f"the table is {enter_} *{ i }= {table}")
+    i = i + 1
+    
+
+
+# Q52. Calculate factorial of a number entered by user.
+# Example:
+# Enter a number = 5
+# Factorial of a number means product of all the numbers from 1 to that
+# number.
+# 5 factorial = 5 x 4 x 3 x 2 x 1
+# Output = 120
+
+number = int(input("enter the number = "))
+
+i = 1
+factorial = 1
+
+while i <= number:
+    factorial = factorial * i
+    i = i + 1
+
+print(f"the factorial is {factorial}")
+
+
+
+# Q53. Ask to numbers x and y from the user. If x<y then print all the
+# numbers from x to y, but if y<x then print all the numbers from y to x.
+
+# Q53: Print all numbers from x to y if x < y, otherwise from y to x
+
+x = int(input("Enter the number x = "))
+y = int(input("Enter the number y = "))
+
+if x < y:
+    i = x
+    while i <= y:
+        print(i)
+        i += 1
+else:
+    i = y
+    while i <= x:
+        print(i)
+        i += 1
