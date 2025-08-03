@@ -628,3 +628,66 @@ else:
     while i <= x:
         print(i)
         i += 1
+
+
+
+# BASIC FOR LOOP
+# Q54. Ask a number from user. Print all the numbers from 1 to that number.
+add_ = int(input("enter the number = "))
+
+for i in range(1, add_ + 1):
+    print(i)
+
+
+# Q55. Ask a number (N) from user. Print all the numbers from N to 1.
+num_ = int(input("enter the number = "))
+
+for i in range(num_, 0, - 1):
+    print(i)
+# Q56. Ask start number and end number from user. Print all the numbers from start to end using while loop.
+start = int(input("enter the first number "))
+end = int(input("enter the last number "))
+
+for i in range(start, end + 1):
+    print(i)
+# Q57. Calculate the sum of all the numbers from 1 to 10.
+
+count = 0
+for i in range(1, 10):
+    count = count + 1
+print(count)
+# Q58. Calculate product of all the numbers from 1 to 10.
+
+count = 1
+for i in range(1, 11):
+    count = count * i
+print(f"the count is {count}")
+# Q59. Calculate how many numbers are divisible by 7 from 1 to 100.
+count = 0
+
+for i in range(1, 101):
+    if i % 7 == 0:
+        count = count + 1
+print(f"count is {count}")
+# Q60. Calculate how many numbers are divisible by both 6 and 7 between 1
+# to 200
+
+count = 0
+
+for i in range(1, 201):
+    if i % 6 == 0 and i % 7 == 0:
+        count = count + 1
+    print(f"count is {count}")
+
+
+# Q 63 Ask a number from user. Print the multiplication table of that number.
+# Example
+# Enter a number = 8
+# 8 x 1 = 8
+# 8 x 2 = 16
+# 8 x 3 = 24
+table_ = int(input("enter the number = "))
+
+for i in range(1, 11):
+    table1_ = table_ * i
+    print(f"{table_} * {i} = {table1_}")
