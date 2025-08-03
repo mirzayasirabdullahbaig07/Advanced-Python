@@ -365,19 +365,128 @@ else:
 # salary between 10,000 and 20, 000, 10 % increment
 # salary between 20,000 and 50,000, 15 % increment
 # salary more than 50,000, 20 % increment
-input_salary = int(input("enter the salary =  "))
-if input_salary > 100000:
-    print("then 5 increment")
-elif input_salary < 100000 and input_salary > 200000:
-    print("the salary is increment by 10 percent ")
-elif input_salary < 200000 and input_salary > 500000:
-    print("then the increment is 15 percent")
-elif input_salary < 500000:
-    print("then the increment is 20 percent")
-else:
-    print("enter correct value")
+input_salary = int(input("Enter the current salary: "))
 
+if input_salary < 10000: # less than 10000
+    increment = 0.05 * input_salary
+elif 10000 <= input_salary <= 20000:
+    increment = 0.10 * input_salary
+elif 20001 <= input_salary <= 50000:
+    increment = 0.15 * input_salary
+else:
+    increment = 0.20 * input_salary
+
+updated_salary = input_salary + increment
+print(f"Increment: {increment}")
+print(f"Updated Salary: {updated_salary}")
 # must do it again
 
-# 
-                         
+# Q37: An extra day is added to the calendar almost every four years as
+# February 29, and the day is called a leap day. A leap year contains a leap
+# day.
+
+
+# These are the conditions used to identify leap years:
+
+# if the year can be evenly divided by 4, it is then a leap year
+# but if the year is evenly divided by 4 and also by 100, then it is NOT a
+# leap year
+# but if the year is evenly divided by 4 and also by 400, then it is a leap
+# year
+# This means the years 2000 and 2400 are leap years, while 1800, 1900,
+# 2100, 2200, 2300 and 2500 are NOT leap years.
+# Ask a year input from user. And tell if the year entered by user is leap or
+# not
+
+input_Year = int(input("Enter the year: "))
+
+if input_Year % 4 == 0:
+    if input_Year % 100 == 0:
+        if input_Year % 400 == 0:
+            print("It is a leap year.")
+        else:
+            print("It is not a leap year.")
+    else:
+        print("It is a leap year.")
+else:
+    print("It is not a leap year.")
+
+#   question 38 to 41 nested if else statements
+
+# Q38. Write a program that takes three numbers as input and determines
+# the largest one using nested if-else statements. Make sure all 3 numbers
+# entered by user are dierent
+# Q38. Write a program that takes three numbers as input and determines
+# the largest one using nested if-else statements. Make sure all 3 numbers
+# entered by user are different
+
+input_1 = int(input("enter the first number = "))
+input_2 = int(input("enter the second number = "))
+input_3 = int(input("enter the third number = "))
+
+# Check if all numbers are different
+if input_1 != input_2 and input_1 != input_3 and input_2 != input_3:
+    if input_1 > input_2:
+        if input_1 > input_3:
+            print("First number is the greatest.")
+        else:
+            print("Third number is the greatest.")
+    else:
+        if input_2 > input_3:
+            print("Second number is the greatest.")
+        else:
+            print("Third number is the greatest.")
+else:
+    print("Please enter three different numbers. They must be unique.")
+
+# Q39. Write a program that checks if a given year is a leap year. Leap years
+# are divisible by 4, but not by 100 unless they are also divisible by 400.
+enter_year = int(input("enter the year = "))
+
+if enter_year % 4 == 0:
+    if enter_year % 100 == 0:
+        if enter_year % 400 == 0:
+            print("It is a leap year")  # divisible by 400
+        else:
+            print("It is not a leap year")  # divisible by 100 but not 400
+    else:
+        print("It is a leap year")  # divisible by 4 but not by 100
+else:
+    print("It is not a leap year")  # not divisible by 4
+
+# Q40. Create a program that calculates the price of a movie ticket based on the age of the customer. If the customer is under 12, the ticket costs $5; if they are between 12 and 65, the ticket costs $10; otherwise, it's $7.
+movie_ticket = int(input("age of a customer = "))
+if movie_ticket > 12:
+    print("the price is 5")
+else:
+    if movie_ticket <= 65:
+        print("it is 10")
+    else:
+        print("it is 7")
+
+# Q41. Write a program that calculates a person's BMI based on their height
+# (in meters) and weight (in kilograms). Use the following formula: BMI =
+# weight / (height^2). Then, classify the BMI according to the following
+# ranges:
+# Underweight: BMI less than 18.5
+# Normal weight: BMI 18.5 - 24.9
+# Overweight: BMI 25 - 29.9
+# Obesity: BMI 30 or greater
+height = float(input("Enter height in meters: "))
+weight = float(input("Enter weight in kilograms: "))
+
+bmi = weight / (height ** 2)
+
+print("Your BMI is:", round(bmi, 2))
+
+if bmi < 18.5:
+    print("You are underweight.")
+else:
+    if bmi < 25:
+        print("You have a normal weight.")
+    else:
+        if bmi < 30:
+            print("You are overweight.")
+        else:
+            print("You are obese.")
+
