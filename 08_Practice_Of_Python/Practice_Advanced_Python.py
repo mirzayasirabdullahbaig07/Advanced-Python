@@ -721,4 +721,73 @@ if x < y:
 else:
     for i in range(y, x + 1):
         print(i)
-        
+
+
+# Basic Nested Loops
+
+# 66 create a pattern using nested loop
+# *****
+# *****
+# *****
+# *****
+# *****
+
+for i in range(5):
+    for j in range(5):
+        print("*", end="")
+    print()
+
+# 67 create a pattern using nested loop
+12345
+12345
+12345
+12345
+12345
+count = 12345
+
+
+for i in range(5): # this mean it can run 5 times
+    for j in range(1): # it means it can run 1 time
+        print(count, end="")
+    print()
+
+
+
+# 68 create a pattern using nested loop
+54321
+54321
+54321
+54321
+54321
+
+count = 54321
+
+for i in range(5):
+    for j in range(1):
+        print(count, end="")
+    print()
+
+
+# 69 create a pattern using nested loop
+
+11111
+22222
+33333
+44444
+55555
+
+for i in range(1, 6):
+    for j in range(1, 6):
+        print(i, end="")
+    print()
+
+55555
+44444
+33333
+22222
+11111
+
+for i in range(6, 1):
+    for j in range(6, 1):
+        print(j, end="")
+    print()
