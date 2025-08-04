@@ -723,71 +723,100 @@ else:
         print(i)
 
 
-# Basic Nested Loops
-
-# 66 create a pattern using nested loop
+# Q66: Create a pattern using nested loop
 # *****
 # *****
 # *****
 # *****
 # *****
-
 for i in range(5):
     for j in range(5):
         print("*", end="")
     print()
 
-# 67 create a pattern using nested loop
-12345
-12345
-12345
-12345
-12345
-count = 12345
+print("\n" + "-"*20)
 
-
-for i in range(5): # this mean it can run 5 times
-    for j in range(1): # it means it can run 1 time
-        print(count, end="")
-    print()
-
-
-
-# 68 create a pattern using nested loop
-54321
-54321
-54321
-54321
-54321
-
-count = 54321
-
+# Q67: Create a pattern using nested loop
+# 12345
+# 12345
+# 12345
+# 12345
+# 12345
 for i in range(5):
-    for j in range(1):
-        print(count, end="")
+    for j in range(1, 6):
+        print(j, end="")
     print()
 
+print("\n" + "-"*20)
 
-# 69 create a pattern using nested loop
+# Q68: Create a pattern using nested loop
+# 54321
+# 54321
+# 54321
+# 54321
+# 54321
+for i in range(5):
+    for j in range(5, 0, -1):
+        print(j, end="")
+    print()
 
-11111
-22222
-33333
-44444
-55555
+print("\n" + "-"*20)
 
+# Q69: Create a pattern using nested loop
+# 11111
+# 22222
+# 33333
+# 44444
+# 55555
 for i in range(1, 6):
-    for j in range(1, 6):
+    for j in range(5):
         print(i, end="")
     print()
 
-55555
-44444
-33333
-22222
-11111
+print("\n" + "-"*20)
 
-for i in range(6, 1):
-    for j in range(6, 1):
-        print(j, end="")
+# Q70: Create a pattern using nested loop
+# 55555
+# 44444
+# 33333
+# 22222
+# 11111
+for i in range(5, 0, -1):
+    for j in range(5):
+        print(i, end="")
+    print()
+
+print("\n" + "-"*20)
+
+# Q71: Ask N from user. Print pattern:
+# Example N=6
+# 111111
+# 222222
+# 333333
+# 444444
+# 555555
+# 666666
+n = int(input("Enter the number of lines (Q71): "))
+for i in range(1, n + 1):
+    for j in range(n):
+        print(i, end="")
+    print()
+
+print("\n" + "-"*20)
+
+# Q72: Ask N from user. Print pattern:
+# Example N=9
+# 888888888
+# 777777777
+# 666666666
+# 555555555
+# 444444444
+# 333333333
+# 222222222
+# 111111111
+# 000000000
+n = int(input("Enter the number of lines (Q72): "))
+for i in range(n - 1, -1, -1):
+    for j in range(n):
+        print(i, end="")
     print()
