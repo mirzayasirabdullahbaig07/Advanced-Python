@@ -922,3 +922,13 @@ for i in range(5, 0, -1):
     for j in range(i):
         print("*", end= "")
     print()
+
+54321
+4321
+321
+21
+1
+for i in range(5, 0, -1):          # Controls how many numbers per row
+    for j in range(i, 0, -1):      # Print from i down to 1
+        print(j, end="")
+    print()
