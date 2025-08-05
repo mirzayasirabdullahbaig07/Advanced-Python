@@ -932,3 +932,15 @@ for i in range(5, 0, -1):          # Controls how many numbers per row
     for j in range(i, 0, -1):      # Print from i down to 1
         print(j, end="")
     print()
+
+1
+21
+321
+4321
+54321
+count = 1
+for i in range(1, 6):         # 5 rows
+    for j in range(i):        # i numbers in each row
+        print(count, end="")
+        count += 1
+    print()
