@@ -820,3 +820,53 @@ for i in range(n - 1, -1, -1):
     for j in range(n):
         print(i, end="")
     print()
+# Q73
+# 1
+# 12
+# 123
+# 1234
+# 12345
+
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
+
+
+# Q74
+# 1
+# 22
+# 333
+# 4444
+# 55555
+
+for i in range(1, 6):
+    for j in range(i):
+        print(i, end="")
+    print()
+
+
+# Q75
+# 1
+# 21
+# 321
+# 4321
+# 54321
+
+for i in range(1, 6):
+    for j in range(i, 0, -1):
+        print(j, end="")
+    print()
+
+
+# Q76
+# 5
+# 54
+# 543
+# 5432
+# 54321
+
+for i in range(1, 6):
+    for j in range(5, 5 - i, -1):
+        print(j, end="")
+    print()
