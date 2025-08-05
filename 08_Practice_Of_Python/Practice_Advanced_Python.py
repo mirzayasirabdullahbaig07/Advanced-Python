@@ -885,3 +885,16 @@ for i in range(1, 6):
         print(6 - i, end="")
     print()
 
+
+
+54321
+5432
+543
+54
+5
+
+for i in range(5, 0, -1):
+    for j in range(i):
+        print(5 - j, end= "")
+    print()
+
