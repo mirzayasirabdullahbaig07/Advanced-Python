@@ -899,7 +899,7 @@ for i in range(5, 0, -1):
     print()
 
 
-    
+
 55555
 4444
 333
@@ -909,4 +909,16 @@ count = 5
 for i in range(5, 0, -1):
     for j in range(i):
         print(i, end= "")
+    print()
+
+
+
+# *****
+# ****
+# ***
+# **
+# *
+for i in range(5, 0, -1):
+    for j in range(i):
+        print("*", end= "")
     print()
