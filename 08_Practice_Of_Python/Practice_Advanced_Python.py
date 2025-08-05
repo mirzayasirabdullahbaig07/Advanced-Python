@@ -898,3 +898,15 @@ for i in range(5, 0, -1):
         print(5 - j, end= "")
     print()
 
+
+    
+55555
+4444
+333
+22
+1
+count = 5
+for i in range(5, 0, -1):
+    for j in range(i):
+        print(i, end= "")
+    print()
