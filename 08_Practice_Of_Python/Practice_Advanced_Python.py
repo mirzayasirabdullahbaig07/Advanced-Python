@@ -964,7 +964,12 @@ for i in range(1, 6):         # 5 rows
         count += 1
     print()
 
-
+# Q85
+#     *
+#    **
+#   ***
+#  ****
+# *****
 for i in range(1, 6):  # Loop over rows (1 to 5)
     for j in range(5 - i):  # Print spaces
         print(" ", end="")
@@ -972,7 +977,7 @@ for i in range(1, 6):  # Loop over rows (1 to 5)
         print("*", end="")
     print()  # Newline after each row
 
-
+# Q86
     1
    22
   333
@@ -985,7 +990,7 @@ for i in range(1, 6):
     for k in range(i):
         print(i, end="")
     print()
-
+# Q87
     1
    12
   123
@@ -999,3 +1004,18 @@ for i in range(1, 6):
     for k in range(i): 
         print(k + 1, end="")
     print()
+
+# Q87
+#     *
+#    ***
+#   *****
+#  *******
+# *********
+for i in range(1, 6):
+    for j in range(5 - i):
+        print(" ", end= "")
+    for k in range(2 * i - 1):
+        print("*", end="")
+        
+    print()
+
