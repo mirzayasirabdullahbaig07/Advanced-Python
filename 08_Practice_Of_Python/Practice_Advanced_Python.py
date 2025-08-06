@@ -722,17 +722,18 @@ else:
     for i in range(y, x + 1):
         print(i)
 
-#  NESTED LOOPS question patterns
+# NESTED LOOPS question patterns with explanations
+
 # Q66: Create a pattern using nested loop
 # *****
 # *****
 # *****
 # *****
 # *****
-for i in range(5):
-    for j in range(5):
-        print("*", end="")
-    print()
+for i in range(5):                         # Outer loop for 5 rows
+    for j in range(5):                     # Inner loop for 5 columns
+        print("*", end="")                 # Print star without newline
+    print()                                # Move to next line after each row
 
 print("\n" + "-"*20)
 
@@ -742,8 +743,8 @@ print("\n" + "-"*20)
 # 12345
 # 12345
 # 12345
-for i in range(5):
-    for j in range(1, 6):
+for i in range(5):                         # Outer loop for rows
+    for j in range(1, 6):                  # Print numbers from 1 to 5
         print(j, end="")
     print()
 
@@ -755,8 +756,8 @@ print("\n" + "-"*20)
 # 54321
 # 54321
 # 54321
-for i in range(5):
-    for j in range(5, 0, -1):
+for i in range(5):                         # Outer loop for rows
+    for j in range(5, 0, -1):              # Print numbers from 5 to 1
         print(j, end="")
     print()
 
@@ -768,9 +769,9 @@ print("\n" + "-"*20)
 # 33333
 # 44444
 # 55555
-for i in range(1, 6):
-    for j in range(5):
-        print(i, end="")
+for i in range(1, 6):                      # Rows from 1 to 5
+    for j in range(5):                     # 5 columns each
+        print(i, end="")                   # Print same number in each row
     print()
 
 print("\n" + "-"*20)
@@ -781,8 +782,8 @@ print("\n" + "-"*20)
 # 33333
 # 22222
 # 11111
-for i in range(5, 0, -1):
-    for j in range(5):
+for i in range(5, 0, -1):                  # Rows from 5 down to 1
+    for j in range(5):                     # 5 columns each
         print(i, end="")
     print()
 
@@ -797,8 +798,8 @@ print("\n" + "-"*20)
 # 555555
 # 666666
 n = int(input("Enter the number of lines (Q71): "))
-for i in range(1, n + 1):
-    for j in range(n):
+for i in range(1, n + 1):                  # Rows from 1 to n
+    for j in range(n):                     # Columns: print i, n times
         print(i, end="")
     print()
 
@@ -816,110 +817,100 @@ print("\n" + "-"*20)
 # 111111111
 # 000000000
 n = int(input("Enter the number of lines (Q72): "))
-for i in range(n - 1, -1, -1):
-    for j in range(n):
+for i in range(n - 1, -1, -1):             # Rows from n-1 to 0
+    for j in range(n):                     # Columns: print i
         print(i, end="")
     print()
 
-
-# Q73Print the following pattern.
+# Q73: Print the following pattern.
 # 1
 # 12
 # 123
 # 1234
 # 12345
-
 for i in range(1, 6):
-    for j in range(1, i + 1):
+    for j in range(1, i + 1):              # Print from 1 to i
         print(j, end="")
     print()
 
-
-# Q74Print the following pattern.
+# Q74: Print the following pattern.
 # 1
 # 22
 # 333
 # 4444
 # 55555
-
 for i in range(1, 6):
     for j in range(i):
         print(i, end="")
     print()
 
-
-# Q75Print the following pattern.
+# Q75: Print the following pattern.
 # 1
 # 21
 # 321
 # 4321
 # 54321
-
 for i in range(1, 6):
-    for j in range(i, 0, -1):
+    for j in range(i, 0, -1):              # Print from i down to 1
         print(j, end="")
     print()
 
-
-# Q76Print the following pattern.
+# Q76: Print the following pattern.
 # 5
 # 54
 # 543
 # 5432
 # 54321
-
 for i in range(1, 6):
-    for j in range(5, 5 - i, -1):
+    for j in range(5, 5 - i, -1):          # Start at 5, go down i times
         print(j, end="")
     print()
 
-# Q77Print the following pattern.
-5
-44
-333
-2222
-11111
-
-count = 5
+# Q77: Print the following pattern.
+# 5
+# 44
+# 333
+# 2222
+# 11111
 for i in range(1, 6):
     for j in range(i):
-        
-        print(6 - i, end="")
+        print(6 - i, end="")               # Print decreasing number each row
     print()
-# Q78Print the following pattern.
-count = 5
+
+# Q78: Print the following pattern.
+# *
+# **
+# ***
+# ****
+# *****
 for i in range(1, 6):
     for j in range(i):
-        
         print("*", end="")
     print()
-# Q79Print the following pattern.
-54321
-5432
-543
-54
-5
 
+# Q79: Print the following pattern.
+# 54321
+# 5432
+# 543
+# 54
+# 5
 for i in range(5, 0, -1):
     for j in range(i):
-        print(5 - j, end= "")
+        print(5 - j, end="")               # Count forward within each row
     print()
 
-
-# Q80Print the following pattern.
-55555
-4444
-333
-22
-1
-count = 5
+# Q80: Print the following pattern.
+# 55555
+# 4444
+# 333
+# 22
+# 1
 for i in range(5, 0, -1):
     for j in range(i):
-        print(i, end= "")
+        print(i, end="")
     print()
 
-
-# Q81Print the following pattern.
+# Q81: Print the following pattern.
 # *****
 # ****
 # ***
@@ -927,85 +918,81 @@ for i in range(5, 0, -1):
 # *
 for i in range(5, 0, -1):
     for j in range(i):
-        print("*", end= "")
+        print("*", end="")
     print()
-# Q82Print the following pattern.
-54321
-4321
-321
-21
-1
-for i in range(5, 0, -1):          # Controls how many numbers per row
-    for j in range(i, 0, -1):      # Print from i down to 1
+
+# Q82: Print the following pattern.
+# 54321
+# 4321
+# 321
+# 21
+# 1
+for i in range(5, 0, -1):
+    for j in range(i, 0, -1):
         print(j, end="")
     print()
-# Q83Print the following pattern.
-1
-21
-321
-4321
-54321
+
+# Q83: Print the following pattern.
+# 1
+# 23
+# 456
+# 78910
+# 1112131415
 count = 1
-for i in range(1, 6):         # 5 rows
-    for j in range(i):        # i numbers in each row
-        print(count, end="")
-        count += 1
-    print()
-# Q84
-1
-23
-456
-78910
-1112131415
-count = 1
-for i in range(1, 6):         # 5 rows
-    for j in range(i):        # i numbers in each row
+for i in range(1, 6):
+    for j in range(i):
         print(count, end="")
         count += 1
     print()
 
-# Q85
+# Q84: Same as Q83 — continue increasing numbers in triangle
+count = 1
+for i in range(1, 6):
+    for j in range(i):
+        print(count, end="")
+        count += 1
+    print()
+
+# Q85: Print the following pattern.
 #     *
 #    **
 #   ***
 #  ****
 # *****
-for i in range(1, 6):  # Loop over rows (1 to 5)
-    for j in range(5 - i):  # Print spaces
+for i in range(1, 6):
+    for j in range(5 - i):
         print(" ", end="")
-    for k in range(i):  # Print stars
+    for k in range(i):
         print("*", end="")
-    print()  # Newline after each row
+    print()
 
-# Q86
-    1
-   22
-  333
- 4444
-55555
-count = 5
+# Q86: Print the following pattern.
+#     1
+#    22
+#   333
+#  4444
+# 55555
 for i in range(1, 6):
     for j in range(5 - i):
         print(" ", end="")
     for k in range(i):
         print(i, end="")
     print()
-# Q87
-    1
-   12
-  123
- 1234
-12345
 
-count = 5
+# Q87: Print the following pattern.
+#     1
+#    12
+#   123
+#  1234
+# 12345
 for i in range(1, 6):
     for j in range(5 - i):
         print(" ", end="")
-    for k in range(i): 
+    for k in range(i):
         print(k + 1, end="")
     print()
 
-# Q87
+# Q88: Print the following pattern.
 #     *
 #    ***
 #   *****
@@ -1013,30 +1000,27 @@ for i in range(1, 6):
 # *********
 for i in range(1, 6):
     for j in range(5 - i):
-        print(" ", end= "")
+        print(" ", end="")
     for k in range(2 * i - 1):
         print("*", end="")
-        
     print()
 
-
-# Q87
-    *
-   ***
-  *****
- *******
-*********
- *******
-  *****
-   ***
-    *
+# Q89: Print the following diamond pattern.
+#     *
+#    ***
+#   *****
+#  *******
+# *********
+#  *******
+#   *****
+#    ***
+#     *
 for i in range(1, 6):
     for j in range(5 - i):
         print(" ", end="")
     for k in range(2 * i - 1):
         print("*", end="")
     print()
-
 for i in range(4, 0, -1):
     for j in range(5 - i):
         print(" ", end="")
@@ -1044,42 +1028,38 @@ for i in range(4, 0, -1):
         print("*", end="")
     print()
 
-*********
- *******
-  *****
-   ***
-    *
-
-
-for i in range(4, 0, -1):
-    for j in range(5 - i):
-        print(" ", end="")
-    for k in range(2 * i - 1):
-        print("*", end="")
-    print()
-
-*********
- *******
-  *****
-   ***
-    *
-   ***
-  *****
- *******
-*********
-
-# Top Half: Inverted Pyramid
+# Q90: Print the following inverted pyramid.
+# *********
+#  *******
+#   *****
+#    ***
+#     *
 for i in range(5, 0, -1):
     for j in range(5 - i):
-        print(" ", end="")         # Print spaces
+        print(" ", end="")
     for k in range(2 * i - 1):
-        print("*", end="")         # Print stars
+        print("*", end="")
     print()
 
-# Bottom Half: Upright Pyramid (start from 2 to avoid repeating center row)
+# Q91: Print inverted + upright pyramid.
+# *********
+#  *******
+#   *****
+#    ***
+#     *
+#    ***
+#   *****
+#  *******
+# *********
+for i in range(5, 0, -1):
+    for j in range(5 - i):
+        print(" ", end="")
+    for k in range(2 * i - 1):
+        print("*", end="")
+    print()
 for i in range(2, 6):
     for j in range(5 - i):
-        print(" ", end="")         # Print spaces
+        print(" ", end="")
     for k in range(2 * i - 1):
-        print("*", end="")         # Print stars
+        print("*", end="")
     print()
