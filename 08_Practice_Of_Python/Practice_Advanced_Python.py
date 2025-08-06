@@ -722,7 +722,7 @@ else:
     for i in range(y, x + 1):
         print(i)
 
-
+#  NESTED LOOPS question patterns
 # Q66: Create a pattern using nested loop
 # *****
 # *****
@@ -820,7 +820,9 @@ for i in range(n - 1, -1, -1):
     for j in range(n):
         print(i, end="")
     print()
-# Q73
+
+
+# Q73Print the following pattern.
 # 1
 # 12
 # 123
@@ -833,7 +835,7 @@ for i in range(1, 6):
     print()
 
 
-# Q74
+# Q74Print the following pattern.
 # 1
 # 22
 # 333
@@ -846,7 +848,7 @@ for i in range(1, 6):
     print()
 
 
-# Q75
+# Q75Print the following pattern.
 # 1
 # 21
 # 321
@@ -859,7 +861,7 @@ for i in range(1, 6):
     print()
 
 
-# Q76
+# Q76Print the following pattern.
 # 5
 # 54
 # 543
@@ -871,7 +873,7 @@ for i in range(1, 6):
         print(j, end="")
     print()
 
-# Q77
+# Q77Print the following pattern.
 5
 44
 333
@@ -884,9 +886,14 @@ for i in range(1, 6):
         
         print(6 - i, end="")
     print()
-
-
-
+# Q78Print the following pattern.
+count = 5
+for i in range(1, 6):
+    for j in range(i):
+        
+        print("*", end="")
+    print()
+# Q79Print the following pattern.
 54321
 5432
 543
@@ -899,7 +906,7 @@ for i in range(5, 0, -1):
     print()
 
 
-
+# Q80Print the following pattern.
 55555
 4444
 333
@@ -912,7 +919,7 @@ for i in range(5, 0, -1):
     print()
 
 
-
+# Q81Print the following pattern.
 # *****
 # ****
 # ***
@@ -922,7 +929,7 @@ for i in range(5, 0, -1):
     for j in range(i):
         print("*", end= "")
     print()
-
+# Q82Print the following pattern.
 54321
 4321
 321
@@ -932,7 +939,7 @@ for i in range(5, 0, -1):          # Controls how many numbers per row
     for j in range(i, 0, -1):      # Print from i down to 1
         print(j, end="")
     print()
-
+# Q83Print the following pattern.
 1
 21
 321
@@ -943,4 +950,38 @@ for i in range(1, 6):         # 5 rows
     for j in range(i):        # i numbers in each row
         print(count, end="")
         count += 1
+    print()
+# Q84
+1
+23
+456
+78910
+1112131415
+count = 1
+for i in range(1, 6):         # 5 rows
+    for j in range(i):        # i numbers in each row
+        print(count, end="")
+        count += 1
+    print()
+
+
+for i in range(1, 6):  # Loop over rows (1 to 5)
+    for j in range(5 - i):  # Print spaces
+        print(" ", end="")
+    for k in range(i):  # Print stars
+        print("*", end="")
+    print()  # Newline after each row
+
+
+    1
+   22
+  333
+ 4444
+55555
+count = 5
+for i in range(1, 6):
+    for j in range(5 - i):
+        print(" ", end="")
+    for k in range(i):
+        print(i, end="")
     print()
