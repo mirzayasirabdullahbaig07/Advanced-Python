@@ -1124,3 +1124,14 @@ for a in list_:
         
         even += a
 print(even)
+
+# Q100. Make your own list. Find the sum of all numbers divisible by 3 or 4.
+# (Do on your own)
+
+list_ = [1,2,3,45,5,6,6,6,7,7,8,9,0,10,4,55,754,25,50, 60]
+sum_ = 0
+
+for i in list_:
+    if i % 3 == 0 or i % 4 == 0:
+        sum_ = sum_ + i
+print(sum_)
