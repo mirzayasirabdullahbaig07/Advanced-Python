@@ -1104,3 +1104,12 @@ for a in list_:
 print(even)
 
 
+#Q98. Make your own list. Count how many numbers are divisible by both 2
+# and 5 in that list. (Do on your own)
+
+list_ = [1,2,3,45,5,6,6,6,7,7,8,9,0,10,4,55,754,25,50, 60]
+count = 0
+for i in list_:
+    if i % 2 == 0 and i % 5 == 0:
+        count = count + 1
+print(count)
