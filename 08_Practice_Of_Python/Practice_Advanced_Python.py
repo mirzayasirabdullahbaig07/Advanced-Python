@@ -1147,8 +1147,14 @@ print("Sum:", total)
 print("Average:", avg)
 
 
+# LIST METHODS (BASIC)
+
 # Q104: Print all elements greater than a given number
 numbers = [5, 10, 15, 20, 25]
 threshold = 12
 greater = [num for num in numbers if num > threshold]
 print("Numbers Greater than", threshold, ":", greater)
+
+
+# Q105. Create a list and prompt the user for an 'old number' followed by a 'new number.' If the 'old number' exists in the list, replace it with the 'new number' provided by the user
+
