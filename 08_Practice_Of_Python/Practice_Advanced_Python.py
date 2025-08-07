@@ -1148,3 +1148,12 @@ for i in list_:
         neg_ = neg_ + 1
 print(postive_)
 print(neg_)
+
+
+# Q 102 Make your own list. Print the largest number present in that list.
+list_ = [1,2,4,5,6,67,4,-6,-4,-44,3,-3,2]
+largeest = list_[0]
+for i in list_:
+    if i > largeest:
+        largeest = i
+print(largeest)
