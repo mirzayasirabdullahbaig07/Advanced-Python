@@ -1166,3 +1166,19 @@ for i in list_:
     if i < largeest:
         largeest = i
 print(largeest)
+
+
+# LIST METHODS (BASIC)
+# #Q104. Write a program that prompts the user to specify the length o a list
+# and then requests numbers to populate that list. Display the final list as
+# the output.
+
+
+value = int(input("enter how many numbers you want in the list = "))
+answer = []
+for i in range(value):
+    num = int(input(f"enter the number {i + 1}"))
+    answer.append(num)
+
+print(answer)
+
