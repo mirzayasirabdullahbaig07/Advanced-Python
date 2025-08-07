@@ -1063,3 +1063,44 @@ for i in range(2, 6):
     for k in range(2 * i - 1):
         print("*", end="")
     print()
+
+
+# BASIC LIST ITERATION
+# Q92. Make your own list. Print the list in reverse
+
+list_ = ["yasir", 7, "Yasir Insights", False, 0.7]
+
+print(list_[::-1])
+
+# Q93. Make your own list. Print all the even numbers present in the list
+list_ = [1,2,3,4,5,6,7,8,9,10]
+for var in list_:
+    if var % 2 == 0:
+        print(var, end = " ")
+
+# Q94. Make your own list. Print all the odd numbers present in the list
+
+list_ = [1,2,3,4,5,6,7,8,9,10]
+for var in list_:
+    if var % 3 == 0:
+        print(var, end = " ")
+
+# Q95. Make your own list. Print all the elements present at even index position.
+list_ = ["yasir", 7, "Yasir Insights", False, 0.7]
+print(list_[0::2])
+
+
+# Q96. Make your own list. Print the sum of all elements present in that list.
+list_ = [1,2,3,4,5,6,7,8,9,10]
+print(sum(list_))
+
+# Q97. Make your own list. Count the number of even numbers present in
+# that list
+list_ = [1,2,3,4,5,6,7,8,9,10]
+even = 0
+for a in list_:
+    if a % 2 == 0:
+        even = even + 1
+print(even)
+
+
