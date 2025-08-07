@@ -1169,9 +1169,7 @@ print(largeest)
 
 
 # LIST METHODS (BASIC)
-# #Q104. Write a program that prompts the user to specify the length o a list
-# and then requests numbers to populate that list. Display the final list as
-# the output.
+# #Q104. Write a program that prompts the user to specify the length o a list and then requests numbers to populate that list. Display the final list as the output.
 
 
 value = int(input("enter how many numbers you want in the list = "))
