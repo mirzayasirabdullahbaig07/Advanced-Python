@@ -1113,3 +1113,14 @@ for i in list_:
     if i % 2 == 0 and i % 5 == 0:
         count = count + 1
 print(count)
+
+
+# 99 Make your own list. Find the sum of all even numbers present in that
+
+list_ = [1,2,3,45,5,6,6,6,7,7,8,9,0,10,4,55,754,25,50, 60]
+even = 0
+for a in list_:
+    if a % 2 ==0:
+        
+        even += a
+print(even)
