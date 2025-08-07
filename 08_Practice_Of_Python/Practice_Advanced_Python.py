@@ -1064,6 +1064,7 @@ for i in range(2, 6):
         print("*", end="")
     print()
 
+# list Questions
 
 # Q92: Create a list of 10 numbers entered by the user
 user_list = []
