@@ -1158,3 +1158,6 @@ print("Numbers Greater than", threshold, ":", greater)
 
 # Q105. Create a list and prompt the user for an 'old number' followed by a 'new number.' If the 'old number' exists in the list, replace it with the 'new number' provided by the user
 
+list_ = int(input("enter the value = "))
+
+
