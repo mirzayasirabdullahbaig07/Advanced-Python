@@ -1064,100 +1064,139 @@ for i in range(2, 6):
         print("*", end="")
     print()
 
-# list Questions
+# BASIC LIST ITERATION
+# Q92. Make your own list. Print the list in reverse
 
-# Q92: Create a list of 10 numbers entered by the user
-user_list = []
-for i in range(10):
-    num = int(input(f"Enter number {i+1}: "))
-    user_list.append(num)
-print("User List:", user_list)
+list_ = ["yasir", 7, "Yasir Insights", False, 0.7]
 
+print(list_[::-1])
 
-# Q93: Print the maximum and minimum elements from a list
-numbers = [5, 1, 9, 6, 3]
-print("Max:", max(numbers))
-print("Min:", min(numbers))
+# Q93. Make your own list. Print all the even numbers present in the list
+list_ = [1,2,3,4,5,6,7,8,9,10]
+for var in list_:
+    if var % 2 == 0:
+        print(var, end = " ")
 
+# Q94. Make your own list. Print all the odd numbers present in the list
 
-# Q94: Sort a list in ascending and descending order
-data = [7, 2, 8, 1, 5]
-print("Ascending:", sorted(data))
-print("Descending:", sorted(data, reverse=True))
+list_ = [1,2,3,4,5,6,7,8,9,10]
+for var in list_:
+    if var % 3 == 0:
+        print(var, end = " ")
 
-
-# Q95: Count how many times a number appears in the list
-values = [1, 2, 2, 3, 4, 2, 5]
-target = 2
-print(f"{target} appears {values.count(target)} times")
+# Q95. Make your own list. Print all the elements present at even index position.
+list_ = ["yasir", 7, "Yasir Insights", False, 0.7]
+print(list_[0::2])
 
 
-# Q96: Remove all duplicates from a list
-dup_list = [1, 2, 2, 3, 4, 4, 5]
-unique_list = list(set(dup_list))
-print("List without duplicates:", unique_list)
+# Q96. Make your own list. Print the sum of all elements present in that list.
+list_ = [1,2,3,4,5,6,7,8,9,10]
+print(sum(list_))
+
+# Q97. Make your own list. Count the number of even numbers present in
+# that list
+list_ = [1,2,3,4,5,6,7,8,9,10]
+even = 0
+for a in list_:
+    if a % 2 == 0:
+        even = even + 1
+print(even)
 
 
-# Q97: Reverse a list without using reverse() method
-original = [1, 2, 3, 4, 5]
-reversed_list = original[::-1]
-print("Reversed List:", reversed_list)
+#Q98. Make your own list. Count how many numbers are divisible by both 2
+# and 5 in that list. (Do on your own)
+
+list_ = [1,2,3,45,5,6,6,6,7,7,8,9,0,10,4,55,754,25,50, 60]
+count = 0
+for i in list_:
+    if i % 2 == 0 and i % 5 == 0:
+        count = count + 1
+print(count)
 
 
-# Q98: Merge two lists into one
-list1 = [1, 2, 3]
-list2 = [4, 5, 6]
-merged = list1 + list2
-print("Merged List:", merged)
+# 99 Make your own list. Find the sum of all even numbers present in that
+
+list_ = [1,2,3,45,5,6,6,6,7,7,8,9,0,10,4,55,754,25,50, 60]
+even = 0
+for a in list_:
+    if a % 2 ==0:
+        
+        even += a
+print(even)
+
+# Q100. Make your own list. Find the sum of all numbers divisible by 3 or 4.
+# (Do on your own)
+
+list_ = [1,2,3,45,5,6,6,6,7,7,8,9,0,10,4,55,754,25,50, 60]
+sum_ = 0
+
+for i in list_:
+    if i % 3 == 0 or i % 4 == 0:
+        sum_ = sum_ + i
+print(sum_)
+
+# Q101: Make your own list. Print how many positive and negative numbers are here. (Do on your own)
+list_ = [1,2,4,5,6,6,-67,4,-6,-4,-44,3,-3,2]
+postive_ = 0 
+neg_ = 0
+
+for i in list_:
+    if i > 0:
+        postive_ = postive_ + 1
+    if i < 0:
+        neg_ = neg_ + 1
+print(postive_)
+print(neg_)
 
 
-# Q99: Find the common elements between two lists
-a = [1, 2, 3, 4]
-b = [3, 4, 5, 6]
-common = list(set(a) & set(b))
-print("Common Elements:", common)
+# Q 102 Make your own list. Print the largest number present in that list.
+list_ = [1,2,4,5,6,67,4,-6,-4,-44,3,-3,2]
+largeest = list_[0]
+for i in list_:
+    if i > largeest:
+        largeest = i
+print(largeest) 
 
+# Q 103 Make your own list. Print the largest number present in that list.
 
-# Q100: Find the index of a given element in a list
-elements = ['a', 'b', 'c', 'd']
-item = 'c'
-if item in elements:
-    print(f"Index of {item}:", elements.index(item))
-else:
-    print(f"{item} not found in list")
-
-
-# Q101: Insert a number at a specific index in a list
-nums = [1, 2, 4, 5]
-nums.insert(2, 3)  # Insert 3 at index 2
-print("Updated List:", nums)
-
-
-# Q102: Remove all even numbers from a list
-mixed_nums = [1, 2, 3, 4, 5, 6]
-filtered = [num for num in mixed_nums if num % 2 != 0]
-print("Odd Numbers Only:", filtered)
-
-
-# Q103: Find the sum and average of elements in a list
-lst = [10, 20, 30, 40, 50]
-total = sum(lst)
-avg = total / len(lst)
-print("Sum:", total)
-print("Average:", avg)
+list_ = [1,2,4,5,6,67,4,-6,-4,-44,3,-3,2]
+largeest = list_[0]
+for i in list_:
+    if i < largeest:
+        largeest = i
+print(largeest)
 
 
 # LIST METHODS (BASIC)
-
-# Q104: Print all elements greater than a given number
-numbers = [5, 10, 15, 20, 25]
-threshold = 12
-greater = [num for num in numbers if num > threshold]
-print("Numbers Greater than", threshold, ":", greater)
+# #Q104. Write a program that prompts the user to specify the length o a list and then requests numbers to populate that list. Display the final list as the output.
 
 
-# Q105. Create a list and prompt the user for an 'old number' followed by a 'new number.' If the 'old number' exists in the list, replace it with the 'new number' provided by the user
+value = int(input("enter how many numbers you want in the list = "))
+answer = []
+for i in range(value):
+    num = int(input(f"enter the number {i + 1}"))
+    answer.append(num)
 
-list_ = int(input("enter the value = "))
+print(answer)
 
+# Q105. Create a list and prompt the user for an 'old number' followed by a
+# 'new number.' If the 'old number' exists in the list, replace it with the 'new
+# number' provided by the user.
 
+# Step 1: Create the list
+list_ = [1,2,3,4,5,6,6,7,8,9,10,11,12,13,14,15,16,17]
+
+num_odd = int(input("Enter the old number = "))
+if num_odd % 2 != 0:
+    print(f"{num_odd} is odd")
+else:
+    print(f"{num_odd} is not odd")
+
+if num_odd in list_:
+    new_num = int(input("Enter the new number = "))
+    index = list_.index(num_odd)  
+    list_[index] = new_num        
+else:
+    print("Number not found in the list.")
+
+print(list_)
