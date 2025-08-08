@@ -1200,3 +1200,19 @@ else:
     print("Number not found in the list.")
 
 print(list_)
+
+
+# Q 106 Remove all the even numbers from the list.
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+odd_numbers = []
+for num in numbers:
+    if num % 2 != 0:
+        odd_numbers.append(num)
+numbers = odd_numbers
+print(numbers)
+
+# an other solution
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+numbers = [num for num in numbers if num % 2 != 0]
+print(number)
