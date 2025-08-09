@@ -1254,3 +1254,12 @@ for i in list_:
         odd_.append(i)
 print(odd_)
 print(even_)
+
+# q 109 Start by creating two separate lists with random numbers. Then, create a third list that merges the numbers from the first and second lists together.
+list_ = [1, 2, 3, 3, 4, 5, 5, 5]
+list__ = [2, 43, 5, 5, 3, 5, 2, 1, 10]
+
+# Merge both lists
+list_new = list_ + list__
+
+print(list_new)
