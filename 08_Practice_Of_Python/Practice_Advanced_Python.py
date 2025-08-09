@@ -1321,3 +1321,15 @@ max_count = occurrences[max_element]
 # Step 3: Print result
 print("Occurrences:", occurrences)
 print(f"Element with highest occurrence: {max_element} (appears {max_count} times)")
+
+
+ # Q115. Write a program that has two lists and make a new list that contains only the common elements between them without duplicates
+
+a = [1,2,3,4,4,5,56,6,7,7]
+b = [1,4,56,7,8,8]
+c = []
+
+for i in a:
+    if i in b and i not in c:
+        c.append(i)
+print(c)
