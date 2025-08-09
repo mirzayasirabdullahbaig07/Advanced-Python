@@ -1263,3 +1263,15 @@ list__ = [2, 43, 5, 5, 3, 5, 2, 1, 10]
 list_new = list_ + list__
 
 print(list_new)
+
+
+# 110. Make a list of your own. And remove all the duplicates element from
+# that list.
+
+list_ = [1,1,1,1,1,3,3,3,2,3,4,5,7,8,6,9,0,10]
+list__ = []
+
+for i in list_:
+    if i not in list__:
+        list__.append(i)
+print(list__)
