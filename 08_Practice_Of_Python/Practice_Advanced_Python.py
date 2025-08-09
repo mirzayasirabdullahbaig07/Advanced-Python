@@ -1275,3 +1275,14 @@ for i in list_:
     if i not in list__:
         list__.append(i)
 print(list__)
+
+# Q111. Make a list. Then ask a number from user. If number exists in that list then print the position of the element else print -1.
+list_ = [1,2,3,4,5,56,7,8,9,9,0,2,3,4,5,68,7]
+num = int(input("enter the value = "))
+
+
+if num in list_:
+    position = list_.index(num)
+    print(position)
+else:
+    print(-1)
