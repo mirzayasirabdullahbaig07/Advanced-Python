@@ -1216,3 +1216,24 @@ print(numbers)
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 numbers = [num for num in numbers if num % 2 != 0]
 print(number)
+
+# Q107. Ask the user for a number. Then, from a list of numbers, 
+# remove all the numbers that can be divided by the number the user entered.
+
+# Original list
+list__ = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 15]
+
+# Empty list to store the remaining numbers
+list_ = []
+
+# Ask user for a number
+num = int(input("Enter the number: "))
+
+# Loop through each element in the original list
+for i in list__:
+    # If i is NOT divisible by num, keep it
+    if i % num != 0:
+        list_.append(i)  # Add to the new list
+
+# Print the filtered list
+print("Filtered list:", list_)
