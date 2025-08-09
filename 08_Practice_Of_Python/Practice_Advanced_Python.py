@@ -1297,3 +1297,12 @@ list__ = list_[::-1]
 
 print(list_)
 print(list__)
+
+#Q113. Write a program to find the average of all the numbers present in the list. (Do on your own)
+
+list_ = [1,2,3,5,6,7,8,9,0,8,6,5,4,6]
+for i in list_:
+    list__ = (i / len(list_) ) * 100
+print(list__)
+
+# 
