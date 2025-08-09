@@ -1305,4 +1305,19 @@ for i in list_:
     list__ = (i / len(list_) ) * 100
 print(list__)
 
-# 
+# Q114: Find the occurrence of each element and print the one with highest occurrence
+
+list_ = [1, 2, 3, 4, 5, 5, 5, 5, 8, 6, 6, 4, 2, 4, 6]
+# Step 1: Count occurrences using a dictionary
+occurrences = {}
+for num in list_:
+    if num in occurrences:
+        occurrences[num] += 1
+    else:
+        occurrences[num] = 1
+# Step 2: Find the element with the highest occurrence
+max_element = max(occurrences, key=occurrences.get)
+max_count = occurrences[max_element]
+# Step 3: Print result
+print("Occurrences:", occurrences)
+print(f"Element with highest occurrence: {max_element} (appears {max_count} times)")
