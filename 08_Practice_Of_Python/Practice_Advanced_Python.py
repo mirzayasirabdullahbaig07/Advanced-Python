@@ -1333,3 +1333,35 @@ for i in a:
     if i in b and i not in c:
         c.append(i)
 print(c)
+
+
+# Q117. Make a program that takes a list of integers and returns the product of all the elements
+
+list_ = [1,2,3,4,4,5,5,65,6]
+
+for i in list_:
+    list_ = list_ * i
+
+print(list_)
+
+list_ = [1,3,4,5,6,7,78,88,74]
+
+largest = second_largest = float('-inf')
+
+for num in list_:
+    if num > largest:
+        second_largest = largest 
+        largest = num
+    elif num > second_largest and num != largest:
+        second_largest = num
+print(second_largest)
+
+
+
+# 117. Make a program that takes a list of integers and returns the product of all the elements.
+list_ = [1,2,3,4,4,5,5,65,6]
+list__ = 1
+for i in list_:
+    list__ = list__ * i
+
+print(list__)
