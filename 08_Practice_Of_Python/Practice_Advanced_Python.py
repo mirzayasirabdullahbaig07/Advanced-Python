@@ -1365,3 +1365,13 @@ for i in list_:
     list__ = list__ * i
 
 print(list__)
+
+#Q 118  Write a program to find and print all prime numbers within a given list
+list_ = [1,2,3,3,4,45,5,6,6,7,87,8,8]
+list__ = []
+for i in list_:
+    
+    if i % 2 != 0:
+        list__.append(i)
+print(list_new)
+
