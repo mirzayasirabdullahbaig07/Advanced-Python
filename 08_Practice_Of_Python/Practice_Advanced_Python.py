@@ -1375,3 +1375,14 @@ for i in list_:
         list__.append(i)
 print(list_new)
 
+# Q119. Write a program to split a given list into two halves. (Do on your own)
+list_ = [1, 2, 3, 4, 5, 6, 6, 7, 8, 9, 10]
+
+mid = len(list_) // 2  # Find midpoint
+
+list_a = list_[:mid]  # First half
+list_b = list_[mid:]  # Second half
+
+print(list_a)
+print(list_b)
+
