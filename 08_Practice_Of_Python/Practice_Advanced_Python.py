@@ -1444,3 +1444,11 @@ list_b = my_list[mid:]
 print(list_a)
 print(list_b)
 
+
+# Q128. Implement a python program to get the last 'n' elements from a list using slicing.
+
+a = [1, 2, 3, 4, 5, 6, 6, 7, 78, 8, 9, 9, 0]
+n = int(input("Enter the nth value = "))
+
+last_n_elements = a[-n:]
+print(last_n_elements)
