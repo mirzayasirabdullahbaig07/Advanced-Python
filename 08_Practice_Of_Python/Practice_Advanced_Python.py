@@ -1415,3 +1415,7 @@ sample_list = [i*3 for i in my_list]
 print(sample_list)
 
 
+# Q124. Generate a list of list using list comprehension where format should be [[1, ”ODD”], [2, “EVEN”], [3, ”ODD”]].
+my_list = [1,1,3,4,5,6,67,7,8,9,9,8]
+sample_list = [[i, "ODD"] if i % 2 != 0 else [i, "EVEN"] for i in my_list]
+print(sample_list)
