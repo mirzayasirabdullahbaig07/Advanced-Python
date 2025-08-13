@@ -1481,7 +1481,7 @@ print(reversed_slice)
 # Q132. Ask a string from user. Count how many alphabets are there in that
 # string
 
-str_ = "yasirabdullahbaig"
+str_ = "YasirAbdullahBaig"
 
 count = 0
 
@@ -1489,3 +1489,17 @@ for ch in str_:
     if ch.isalpha():
         count = count + 1
 print(count)
+
+# Q133. Ask a string from user. Count the number of uppercase an lowercase characters in that String.
+str_ = "YasirAbdullahBaig"
+upper_count = 0
+lower_count = 0
+
+for ch in str_:
+    if ch.isupper():
+        upper_count += 1
+    elif ch.islower():
+        lower_count += 1
+
+print("Uppercase letters:", upper_count)
+print("Lowercase letters:", lower_count)
