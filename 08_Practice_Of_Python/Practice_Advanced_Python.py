@@ -1452,3 +1452,10 @@ n = int(input("Enter the nth value = "))
 
 last_n_elements = a[-n:]
 print(last_n_elements)
+
+# Q129. Ask ‘n’ from user. Create a list of last n elements but in reverse order using slicing.
+a = [1, 2, 3, 4, 5, 6, 6, 7, 78, 8, 9, 9, 0]
+n = int(input("Enter the nth value = "))
+
+last_n_elements = a[-n:][::-1]
+print(last_n_elements)
