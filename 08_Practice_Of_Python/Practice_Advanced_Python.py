@@ -1409,3 +1409,9 @@ sample_list = [len(i) for i in my_list]
 print(sample_list)
 
 
+#Q123. Generate a list of strings where each string repeats itself three times, using list comprehension.
+my_list = ["mirza", "yasir", "abdullah", "baig"]
+sample_list = [i*3 for i in my_list]
+print(sample_list)
+
+
