@@ -1431,3 +1431,16 @@ print(list_[::-1])
 
 my_list = ["mirza", "yasir", "abdullah", "baig", "mirza", "yasir", "abdullah", "baig"]
 print(my_list[::3])
+
+# Q127. Implement a python program to split a list into two equal parts using
+# slicing. One list should contain 1st half and another list should contain 2nd
+# half
+my_list = ["1", "2", "2", "4", "mirza", "yasir", "abdullah", "baig"]
+mid = len(my_list) // 2
+
+list_a = my_list[:mid]
+list_b = my_list[mid:]
+
+print(list_a)
+print(list_b)
+
