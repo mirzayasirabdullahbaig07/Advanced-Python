@@ -1503,3 +1503,9 @@ for ch in str_:
 
 print("Uppercase letters:", upper_count)
 print("Lowercase letters:", lower_count)
+
+# Q134. Ask a string from user. Convert all the alphabets to uppercase.
+str_ = "YasirAbdullahBaig"
+str_upper = str_.upper()
+
+print(str_upper)
