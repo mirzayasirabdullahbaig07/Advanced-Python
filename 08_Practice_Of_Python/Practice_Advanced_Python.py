@@ -1419,3 +1419,9 @@ print(sample_list)
 my_list = [1,1,3,4,5,6,67,7,8,9,9,8]
 sample_list = [[i, "ODD"] if i % 2 != 0 else [i, "EVEN"] for i in my_list]
 print(sample_list)
+
+
+# List Slicing Questions Practice
+# Q125. Write a python program to reverse a list using slicing.
+list_ = [1,1,3,4,5,6,67,7,8,9,9,8]
+print(list_[::-1])
