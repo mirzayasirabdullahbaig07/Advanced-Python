@@ -1394,3 +1394,18 @@ list_ = [1,2,3,4,5,56,6,7,8,9]
 list_[0], list_[-1] = list_[-1], list_[0]
 
 print(list_)
+
+
+
+# Q121. Generate a list of squares of numbers from 1 to 10 using list comprehension
+
+square_ = [x**2 for x in range(1, 11)]
+print(square_)
+
+# Q122. Given a list of strings, create a new list containing the lengths of each string using list comprehension
+my_list = ["mirza", "yasir", "abdullah", "baig"]
+
+sample_list = [len(i) for i in my_list]
+print(sample_list)
+
+
