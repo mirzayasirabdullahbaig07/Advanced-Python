@@ -1386,3 +1386,11 @@ list_b = list_[mid:]  # Second half
 print(list_a)
 print(list_b)
 
+
+#Q120. Write a program that swaps the first and last elements of a given list.
+
+list_ = [1,2,3,4,5,56,6,7,8,9]
+
+list_[0], list_[-1] = list_[-1], list_[0]
+
+print(list_)
