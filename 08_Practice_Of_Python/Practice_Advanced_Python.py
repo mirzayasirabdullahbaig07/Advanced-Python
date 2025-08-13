@@ -1459,3 +1459,19 @@ n = int(input("Enter the nth value = "))
 
 last_n_elements = a[-n:][::-1]
 print(last_n_elements)
+
+#Q130. Ask start and end index from the user. Create a list from start index to end index using slicing.
+a = [1, 2, 3, 4, 5, 6, 6, 7, 78, 8, 9, 9, 0]
+start = int(input("enter the value - "))
+end = int(input("enter the value - "))
+
+sub_list = a[start:end]
+print(sub_list)
+
+# Q131. Ask start and end index from the user. Create a list of last n elements but in reverse order using slicing.
+a = [1, 2, 3, 4, 5, 6, 6, 7, 78, 8, 9, 9, 0]
+start = int(input("Enter start index: "))
+end = int(input("Enter end index: "))
+
+reversed_slice = a[start:end][::-1]
+print(reversed_slice)
