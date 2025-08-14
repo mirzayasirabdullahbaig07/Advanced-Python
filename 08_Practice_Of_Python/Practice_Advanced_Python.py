@@ -1576,3 +1576,9 @@ str_ = input("Enter a string: ")
 result = str_.title()
 
 print("Formatted string:", result)
+
+
+# Q140. Write a program that reverses each word in a sentence while maintaining the word order. For example, "Hello World" should become "olleH dlroW".
+str_ = "yasir abdullah"
+reversed_words = " ".join(word[::-1] for word in str_.split())
+print(reversed_words)
