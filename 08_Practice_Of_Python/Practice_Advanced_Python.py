@@ -1566,3 +1566,13 @@ print("Symbols:", symbols)
 str_ = "yasir abdullah"
 reversed_str = " ".join(str_.split()[::-1])
 print(reversed_str)
+
+
+# Q139. Write a program that accepts a string and capitalizes the first letter of each word while converting all other letters to lowercase.
+
+str_ = input("Enter a string: ")
+
+# Capitalize first letter of each word & make others lowercase
+result = str_.title()
+
+print("Formatted string:", result)
