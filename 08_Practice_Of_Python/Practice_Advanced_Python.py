@@ -1509,3 +1509,24 @@ str_ = "YasirAbdullahBaig"
 str_upper = str_.upper()
 
 print(str_upper)
+
+
+# Q135. Ask a string from user. Convert uppercase to lowercase and convert lowercase to uppercase and don’t change the other letters. (Do on your own)
+
+text = input("enter the string: ")
+
+result = " "
+
+
+for char in text:
+    if char.isupper:
+        result = result + char.lower() 
+    elif char.islower:
+        result = result + char.upper()
+    else:
+        result = result + char
+
+
+print(result)
+
+
