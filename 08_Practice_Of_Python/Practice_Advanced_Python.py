@@ -1529,4 +1529,7 @@ for char in text:
 
 print(result)
 
+# Q136. Count the number of spaces in a string entered by user.
+str_ = "yasir            abdullah"
 
+print(str_.count(" "))
