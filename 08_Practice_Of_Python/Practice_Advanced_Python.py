@@ -1582,3 +1582,19 @@ print("Formatted string:", result)
 str_ = "yasir abdullah"
 reversed_words = " ".join(word[::-1] for word in str_.split())
 print(reversed_words)
+
+# Q141. Write a program that converts a string in camelCase to snake_case. For example, converting "helloWorldHowAreYou" should result in "hello_world_how_are_you". (Do on your own)
+
+def camel_to_snake(camel_str):
+    snake_str = ""
+    for char in camel_str:
+        if char.isupper():  # If character is uppercase
+            snake_str += "_" + char.lower()
+        else:
+            snake_str += char
+    return snake_str
+
+# Example usage
+camel_string = "helloWorldHowAreYou"
+snake_string = camel_to_snake(camel_string)
+print(snake_string)
