@@ -1556,3 +1556,13 @@ print("Alphabets:", alphabets)
 print("Digits:", digits)
 print("Spaces:", spaces)
 print("Symbols:", symbols)
+
+
+# STRING METHODS - 2
+
+
+# Q138. Write a program to reverse the order of words.
+
+str_ = "yasir abdullah"
+reversed_str = " ".join(str_.split()[::-1])
+print(reversed_str)
