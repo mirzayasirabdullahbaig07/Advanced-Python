@@ -1656,3 +1656,14 @@ total = 1
 for i in dic_.values():
     total *= i
 print(total)
+
+
+# Q146. Ask a string from user. Display the dictionary where each key is a character and value is the frequency of that character that comes in that string
+
+
+
+
+dic_ = {}
+for i in dic_:
+    str_ = input("enter the string = ")
+    
