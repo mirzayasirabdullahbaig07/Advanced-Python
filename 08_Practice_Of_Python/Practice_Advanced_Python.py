@@ -1598,3 +1598,36 @@ def camel_to_snake(camel_str):
 camel_string = "helloWorldHowAreYou"
 snake_string = camel_to_snake(camel_string)
 print(snake_string)
+
+
+
+# Dictionary iteration
+# Q142- Ask subject name and marks from the user and keep adding it to the dictionary?
+ 
+#Ask total number of subjects
+subject_count = int(input("Enter the total number of subjects: "))
+
+# Create an empty dictionary
+subjects = {}
+
+# Loop to take input for each subject
+for i in range(subject_count):
+    sub = input(f"Enter the name of subject {i+1}: ")
+    marks = int(input(f"Enter the marks for {sub}: "))
+    subjects[sub] = marks  # store subject and marks in dictionary
+
+# Print final dictionary
+print("\nSubjects and Marks:")
+print(subjects)
+
+# Q143. Convert two lists into a dictionary. Make two list on your own of
+# same length, and convert them to dictionary.
+list_ = ['ten', 'twenty', 'thirty']
+list__ = [10, 20, 30]
+
+dic_ = {}
+
+for i in range(len(list_)):
+    dic_[list_[i]] = list__[i]   # assign key-value pair
+
+print(dic_)
