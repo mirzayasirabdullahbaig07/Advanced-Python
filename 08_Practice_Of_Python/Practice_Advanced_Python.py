@@ -1631,3 +1631,28 @@ for i in range(len(list_)):
     dic_[list_[i]] = list__[i]   # assign key-value pair
 
 print(dic_)
+
+
+
+# Q144. Write a Python program to sum all the items in a dictionary.
+# Dictionary with key-value pairs
+dic_ = {'a': 10, 'b': 20, 'c': 30, 'd': 40}
+
+# Method 1: Using loop
+total = 0
+for value in dic_.values():
+    total += value
+
+print("Sum of all items:", total)
+
+# Method 2: Using sum() directly
+print("Sum of all items (using sum):", sum(dic_.values()))
+
+
+
+# Q145: Write a Python program to multiply all the items in a dictionary. (Do on your own)
+dic_ = {'a': 10, 'b': 20, 'c': 30, 'd': 40}
+total = 1
+for i in dic_.values():
+    total *= i
+print(total)
