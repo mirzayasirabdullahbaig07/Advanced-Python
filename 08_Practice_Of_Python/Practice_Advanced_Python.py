@@ -1659,11 +1659,83 @@ print(total)
 
 
 # Q146. Ask a string from user. Display the dictionary where each key is a character and value is the frequency of that character that comes in that string
+string = input("Enter a string: ")
+
+freq = {}
+for char in string:
+    freq[char] = freq.get(char, 0) + 1
+
+print("Character Frequency Dictionary:", freq)
 
 
 
+# Q147. Store “name” of a student as Key, “list of 5 marks” of that student as
+# a Value. Store atleast 5 student names. Print the sum and percentage of all
+# the students.
+students = {
+    "Ali": [80, 75, 90, 85, 70],
+    "Sara": [90, 95, 88, 92, 85],
+    "Bilal": [60, 65, 70, 75, 80],
+    "Ayesha": [100, 95, 98, 99, 97],
+    "Usman": [70, 72, 68, 74, 76]
+}
 
-dic_ = {}
-for i in dic_:
-    str_ = input("enter the string = ")
-    
+for name, marks in students.items():
+    total = sum(marks)
+    percentage = total / (len(marks) * 100) * 100
+    print(f"{name}: Total = {total}, Percentage = {percentage:.2f}%")
+
+
+# Q148. Store marks of 5 dierent subjects in a dictionary. Ask subject name
+# as an input from the User. Print the marks of that subject entered by User.
+# If subject does not exist, print “Invalid”.
+marks = {
+    "Math": 85,
+    "English": 78,
+    "Science": 92,
+    "Computer": 95,
+    "History": 74
+}
+
+subject = input("Enter subject name: ")
+
+if subject in marks:
+    print(f"Marks in {subject}: {marks[subject]}")
+else:
+    print("Invalid")
+
+# Q149. Store name as a Key, and 5 marks in a List as a value in dictionary.
+# Store details of at least 5 students. Print the name of the student who got
+# highest marks
+
+students = {
+    "Ali": [80, 75, 90, 85, 70],
+    "Sara": [90, 95, 88, 92, 85],
+    "Bilal": [60, 65, 70, 75, 80],
+    "Ayesha": [100, 95, 98, 99, 97],
+    "Usman": [70, 72, 68, 74, 76]
+}
+
+highest_student = ""
+highest_marks = 0
+
+for name, marks in students.items():
+    total = sum(marks)
+    if total > highest_marks:
+        highest_marks = total
+        highest_student = name
+
+print(f"Topper: {highest_student} with {highest_marks} marks")
+
+
+# Q150. Write a Python program to combine two dictionary by adding values
+# for common keys
+dict1 = {"a": 10, "b": 20, "c": 30}
+dict2 = {"b": 5, "c": 15, "d": 25}
+
+combined = dict1.copy()
+
+for key, value in dict2.items():
+    combined[key] = combined.get(key, 0) + value
+
+print("Combined Dictionary:", combined)
