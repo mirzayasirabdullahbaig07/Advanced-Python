@@ -1739,3 +1739,5 @@ for key, value in dict2.items():
     combined[key] = combined.get(key, 0) + value
 
 print("Combined Dictionary:", combined)
+
+# some questions are pending
