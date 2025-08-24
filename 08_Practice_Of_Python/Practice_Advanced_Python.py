@@ -1741,6 +1741,13 @@ for key, value in dict2.items():
 print("Combined Dictionary:", combined)
 
 # some questions are pending
+# Questions for sets in Python
+# Q151 Create a set containing numbers from 1 to 5. Print the set and its type.
+sets_ = {1,2,3,4,5}
+
+print(sets_)
+print(type(sets_))
+
 
 # some questions are still pending
 
