@@ -1748,7 +1748,17 @@ sets_ = {1,2,3,4,5}
 print(sets_)
 print(type(sets_))
 
+# Can a set have duplicate values?
 
+# What happens if you add the same element twice in a set?
+
+# How do you remove an item from a set?
+
+# How do you check if "apple" is in a set?
+
+# Which data type is not allowed inside a set?
+
+# What is the difference between a list and a set?
 # some questions are still pending
 
 # some questions are peding will update soon
