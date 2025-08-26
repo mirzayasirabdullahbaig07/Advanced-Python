@@ -15,7 +15,7 @@ msg = 'He said, "Hello!"'
 print(msg)
 
 # Q3: Print a message containing both single and double quotes:
-#     She said, 'It's cold'.
+# She said, 'It's cold'.
 msg2 = "She said, 'It's cold'."
 print(msg2)
 
@@ -154,10 +154,8 @@ print(num % 2 == 0)  # False → 25 is odd
 # If-Else Practice Questions (Q23 – Q26)
 # =====================================================
 
-# -----------------------------------------------------
 # Q23. Check if a number is positive or negative
 # (Note: Consider 0 as positive)
-# -----------------------------------------------------
 num = int(input("Enter an integer: "))
 
 if num >= 0:
@@ -165,10 +163,8 @@ if num >= 0:
 else:
     print("The number is negative.")
 
-# -----------------------------------------------------
 # Q24. Check if a character is a vowel or consonant
 # (Use multiple OR conditions)
-# -----------------------------------------------------
 char = input("Enter a single character: ").lower()
 
 if char == 'a' or char == 'e' or char == 'i' or char == 'o' or char == 'u':
@@ -176,9 +172,7 @@ if char == 'a' or char == 'e' or char == 'i' or char == 'o' or char == 'u':
 else:
     print("The character is a consonant.")
 
-# -----------------------------------------------------
 # Q25. Check if the first number is divisible by the second
-# -----------------------------------------------------
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: "))
 
@@ -189,10 +183,8 @@ elif num1 % num2 == 0:
 else:
     print(f"{num1} is not divisible by {num2}.")
 
-# -----------------------------------------------------
 # Q26. Check exam eligibility based on attendance
 # Rule: Attendance must be at least 75%
-# -----------------------------------------------------
 classes_held = int(input("Enter the total number of classes held: "))
 classes_attended = int(input("Enter the number of classes attended: "))
 
@@ -204,7 +196,10 @@ if attendance_percentage >= 75:
 else:
     print(" The student is NOT allowed to sit in the exam.")
 
+# -------------------------------
 # IF - ELIF - ELSE
+# -------------------------------
+
 #Q27. Write a program to check if the number is ODD, EVEN or Equal to Zero.
 num = int(input("enter the number = "))
 
@@ -232,7 +227,6 @@ else:
 # Example 2
 # Input: 459094
 # Output: 4
-
 numinput = 13283429
 num = numinput % 10
 print(num)
@@ -243,7 +237,6 @@ print(a)
 
 
 # Q30. Write a program to check if the last digit of a number is divisible by 5 or not.
-
 num = 110030209221
 num1 = num % 10
 print(num1)
@@ -379,27 +372,13 @@ else:
 updated_salary = input_salary + increment
 print(f"Increment: {increment}")
 print(f"Updated Salary: {updated_salary}")
-# must do it again
 
-# Q37: An extra day is added to the calendar almost every four years as
-# February 29, and the day is called a leap day. A leap year contains a leap
-# day.
-
+# Q37: An extra day is added to the calendar almost every four years as February 29, and the day is called a leap day. A leap year contains a leap day.
 
 # These are the conditions used to identify leap years:
-
-# if the year can be evenly divided by 4, it is then a leap year
-# but if the year is evenly divided by 4 and also by 100, then it is NOT a
-# leap year
-# but if the year is evenly divided by 4 and also by 400, then it is a leap
-# year
-# This means the years 2000 and 2400 are leap years, while 1800, 1900,
-# 2100, 2200, 2300 and 2500 are NOT leap years.
-# Ask a year input from user. And tell if the year entered by user is leap or
-# not
+# if the year can be evenly divided by 4, it is then a leap year but if the year is evenly divided by 4 and also by 100, then it is NOT a leap year but if the year is evenly divided by 4 and also by 400, then it is a leap year. This means the years 2000 and 2400 are leap years, while 1800, 1900, 2100, 2200, 2300 and 2500 are NOT leap years.Ask a year input from user. And tell if the year entered by user is leap or not
 
 input_Year = int(input("Enter the year: "))
-
 if input_Year % 4 == 0:
     if input_Year % 100 == 0:
         if input_Year % 400 == 0:
@@ -411,14 +390,11 @@ if input_Year % 4 == 0:
 else:
     print("It is not a leap year.")
 
-#   question 38 to 41 nested if else statements
+# -------------------------------
+# Question 38 to 41 Nested if Else Statements
+# -------------------------------
 
-# Q38. Write a program that takes three numbers as input and determines
-# the largest one using nested if-else statements. Make sure all 3 numbers
-# entered by user are dierent
-# Q38. Write a program that takes three numbers as input and determines
-# the largest one using nested if-else statements. Make sure all 3 numbers
-# entered by user are different
+# Q38. Write a program that takes three numbers as input and determines the largest one using nested if-else statements. Make sure all 3 numbers entered by user are different
 
 input_1 = int(input("enter the first number = "))
 input_2 = int(input("enter the second number = "))
@@ -439,10 +415,8 @@ if input_1 != input_2 and input_1 != input_3 and input_2 != input_3:
 else:
     print("Please enter three different numbers. They must be unique.")
 
-# Q39. Write a program that checks if a given year is a leap year. Leap years
-# are divisible by 4, but not by 100 unless they are also divisible by 400.
+# Q39. Write a program that checks if a given year is a leap year. Leap years are divisible by 4, but not by 100 unless they are also divisible by 400.
 enter_year = int(input("enter the year = "))
-
 if enter_year % 4 == 0:
     if enter_year % 100 == 0:
         if enter_year % 400 == 0:
@@ -464,19 +438,14 @@ else:
     else:
         print("it is 7")
 
-# Q41. Write a program that calculates a person's BMI based on their height
-# (in meters) and weight (in kilograms). Use the following formula: BMI =
-# weight / (height^2). Then, classify the BMI according to the following
-# ranges:
+# Q41. Write a program that calculates a person's BMI based on their height (in meters) and weight (in kilograms). Use the following formula: BMI = weight / (height^2). Then, classify the BMI according to the following ranges:
 # Underweight: BMI less than 18.5
 # Normal weight: BMI 18.5 - 24.9
 # Overweight: BMI 25 - 29.9
 # Obesity: BMI 30 or greater
 height = float(input("Enter height in meters: "))
 weight = float(input("Enter weight in kilograms: "))
-
 bmi = weight / (height ** 2)
-
 print("Your BMI is:", round(bmi, 2))
 
 if bmi < 18.5:
@@ -490,7 +459,10 @@ else:
         else:
             print("You are obese.")
 
+# -------------------------------
 # BASIC WHILE LOOP
+# -------------------------------
+
 # Q42. Ask a number from user. Print all the numbers from 1 to that number.
 user_do = int(input("enter the number = "))
 i = 1
@@ -504,14 +476,15 @@ i = user_do
 while i >= 1:
     print(i)
     i = i - 1
-# Q44. Ask start number and end number from user. Print all the numbers
-# from start to end using while loop.
+
+# Q44. Ask start number and end number from user. Print all the numbers from start to end using while loop.
 start = int(input("enter the first number "))
 end = int(input("enter the last number "))
 i = start
 while i <= end:
     print(i)
     i = i + 1
+
 # Q45. Calculate the sum of all the numbers from 1 to 10.
 i = 1
 total = 0
@@ -520,8 +493,8 @@ while i <= 10:
     total = total + i
     i = i + 1
 print(f"sum is {total}")
-# Q46. Calculate product of all the numbers from 1 to 10.
 
+# Q46. Calculate product of all the numbers from 1 to 10.
 i = 1
 total = 1
 
@@ -529,6 +502,7 @@ while i <= 10:
     total = total * i
     i = i + 1
 print(f"the total product is {total}")
+
 # Q47. Calculate how many numbers are divisible by 7 from 1 to 100.
 i = 1
 count = 0
@@ -537,8 +511,8 @@ while i <= 100:
        count = count + 1
     i = i + 1
 print(f"the value is {count}")
-# Q48. Calculate how many numbers are divisible by both 6 and 7 between 1
-# to 200.
+
+# Q48. Calculate how many numbers are divisible by both 6 and 7 between 1 to 200.
 i = 1
 count = 0
 
@@ -547,8 +521,8 @@ while i <= 200:
         count = count + 1
     i = i + 1
 print(f"the total count is {count}")
-# Q49. Write a program to calculate the sum of all the numbers divisible by 4
-# from 20 to 50.
+
+# Q49. Write a program to calculate the sum of all the numbers divisible by 4 from 20 to 50.
 num = 0
 i = 20
 while i <= 50:
@@ -557,9 +531,7 @@ while i <= 50:
     i = i + 1
 print(f"the sum is {num}")
 
-
-# Q50. Calculate how many numbers are divisible by 6 and 7 between 1 to
-# 200.
+# Q50. Calculate how many numbers are divisible by 6 and 7 between 1 to 200.
 i = 1
 count = 0
 
@@ -581,14 +553,11 @@ enter_ = int(input("enter the number = "))
 i = 1
 
 table = 1
-
 while i <= 10:
     table = enter_ * i 
     print(f"the table is {enter_} *{ i }= {table}")
     i = i + 1
     
-
-
 # Q52. Calculate factorial of a number entered by user.
 # Example:
 # Enter a number = 5
@@ -598,23 +567,17 @@ while i <= 10:
 # Output = 120
 
 number = int(input("enter the number = "))
-
 i = 1
 factorial = 1
 
 while i <= number:
     factorial = factorial * i
     i = i + 1
-
 print(f"the factorial is {factorial}")
 
 
 
-# Q53. Ask to numbers x and y from the user. If x<y then print all the
-# numbers from x to y, but if y<x then print all the numbers from y to x.
-
-# Q53: Print all numbers from x to y if x < y, otherwise from y to x
-
+# Q53. Ask to numbers x and y from the user. If x<y then print all the numbers from x to y, but if y<x then print all the numbers from y to x.
 x = int(input("Enter the number x = "))
 y = int(input("Enter the number y = "))
 
@@ -629,9 +592,10 @@ else:
         print(i)
         i += 1
 
-
-
+# -------------------------------
 # BASIC FOR LOOP
+# -------------------------------
+
 # Q54. Ask a number from user. Print all the numbers from 1 to that number.
 add_ = int(input("enter the number = "))
 
@@ -644,24 +608,26 @@ num_ = int(input("enter the number = "))
 
 for i in range(num_, 0, - 1):
     print(i)
+
 # Q56. Ask start number and end number from user. Print all the numbers from start to end using while loop.
 start = int(input("enter the first number "))
 end = int(input("enter the last number "))
 
 for i in range(start, end + 1):
     print(i)
-# Q57. Calculate the sum of all the numbers from 1 to 10.
 
+# Q57. Calculate the sum of all the numbers from 1 to 10.
 count = 0
 for i in range(1, 10):
     count = count + 1
 print(count)
-# Q58. Calculate product of all the numbers from 1 to 10.
 
+# Q58. Calculate product of all the numbers from 1 to 10.
 count = 1
 for i in range(1, 11):
     count = count * i
 print(f"the count is {count}")
+
 # Q59. Calculate how many numbers are divisible by 7 from 1 to 100.
 count = 0
 
@@ -669,16 +635,14 @@ for i in range(1, 101):
     if i % 7 == 0:
         count = count + 1
 print(f"count is {count}")
+
 # Q60. Calculate how many numbers are divisible by both 6 and 7 between 1
 # to 200
-
 count = 0
-
 for i in range(1, 201):
     if i % 6 == 0 and i % 7 == 0:
         count = count + 1
     print(f"count is {count}")
-
 
 # Q 63 Ask a number from user. Print the multiplication table of that number.
 # Example
@@ -691,8 +655,6 @@ table_ = int(input("enter the number = "))
 for i in range(1, 11):
     table1_ = table_ * i
     print(f"{table_} * {i} = {table1_}")
-
-
 
 # Q64. Calculate factorial of a number entered by user.
 # Example:
@@ -708,9 +670,7 @@ for i in range(1, num + 1):
     factorial = factorial * i
 print(f"the value of the factorial is = {factorial}")
 
-
-# Q65. Ask to numbers x and y from the user. If x<y then print all the
-# numbers from x to y, but if y<x then print all the numbers from y to x.
+# Q65. Ask to numbers x and y from the user. If x<y then print all the numbers from x to y, but if y<x then print all the numbers from y to x.
 
 x = int(input("Enter the first number: "))
 y = int(input("Enter the second number: "))
@@ -722,7 +682,9 @@ else:
     for i in range(y, x + 1):
         print(i)
 
+# -------------------------------
 # NESTED LOOPS question patterns with explanations
+# -------------------------------
 
 # Q66: Create a pattern using nested loop
 # *****
@@ -1064,11 +1026,12 @@ for i in range(2, 6):
         print("*", end="")
     print()
 
+# -------------------------------
 # BASIC LIST ITERATION
+# -------------------------------
+
 # Q92. Make your own list. Print the list in reverse
-
 list_ = ["yasir", 7, "Yasir Insights", False, 0.7]
-
 print(list_[::-1])
 
 # Q93. Make your own list. Print all the even numbers present in the list
@@ -1078,7 +1041,6 @@ for var in list_:
         print(var, end = " ")
 
 # Q94. Make your own list. Print all the odd numbers present in the list
-
 list_ = [1,2,3,4,5,6,7,8,9,10]
 for var in list_:
     if var % 3 == 0:
@@ -1088,13 +1050,11 @@ for var in list_:
 list_ = ["yasir", 7, "Yasir Insights", False, 0.7]
 print(list_[0::2])
 
-
 # Q96. Make your own list. Print the sum of all elements present in that list.
 list_ = [1,2,3,4,5,6,7,8,9,10]
 print(sum(list_))
 
-# Q97. Make your own list. Count the number of even numbers present in
-# that list
+# Q97. Make your own list. Count the number of even numbers present in that list
 list_ = [1,2,3,4,5,6,7,8,9,10]
 even = 0
 for a in list_:
@@ -1102,9 +1062,7 @@ for a in list_:
         even = even + 1
 print(even)
 
-
-#Q98. Make your own list. Count how many numbers are divisible by both 2
-# and 5 in that list. (Do on your own)
+#Q98. Make your own list. Count how many numbers are divisible by both 2 and 5 in that list. (Do on your own)
 
 list_ = [1,2,3,45,5,6,6,6,7,7,8,9,0,10,4,55,754,25,50, 60]
 count = 0
@@ -1113,9 +1071,7 @@ for i in list_:
         count = count + 1
 print(count)
 
-
 # 99 Make your own list. Find the sum of all even numbers present in that
-
 list_ = [1,2,3,45,5,6,6,6,7,7,8,9,0,10,4,55,754,25,50, 60]
 even = 0
 for a in list_:
@@ -1124,9 +1080,7 @@ for a in list_:
         even += a
 print(even)
 
-# Q100. Make your own list. Find the sum of all numbers divisible by 3 or 4.
-# (Do on your own)
-
+# Q100. Make your own list. Find the sum of all numbers divisible by 3 or 4. (Do on your own)
 list_ = [1,2,3,45,5,6,6,6,7,7,8,9,0,10,4,55,754,25,50, 60]
 sum_ = 0
 
@@ -1148,7 +1102,6 @@ for i in list_:
 print(postive_)
 print(neg_)
 
-
 # Q 102 Make your own list. Print the largest number present in that list.
 list_ = [1,2,4,5,6,67,4,-6,-4,-44,3,-3,2]
 largeest = list_[0]
@@ -1158,7 +1111,6 @@ for i in list_:
 print(largeest) 
 
 # Q 103 Make your own list. Print the largest number present in that list.
-
 list_ = [1,2,4,5,6,67,4,-6,-4,-44,3,-3,2]
 largeest = list_[0]
 for i in list_:
@@ -1166,11 +1118,11 @@ for i in list_:
         largeest = i
 print(largeest)
 
-
+# -------------------------------
 # LIST METHODS (BASIC)
+# -------------------------------
+
 # #Q104. Write a program that prompts the user to specify the length o a list and then requests numbers to populate that list. Display the final list as the output.
-
-
 value = int(input("enter how many numbers you want in the list = "))
 answer = []
 for i in range(value):
@@ -1179,10 +1131,7 @@ for i in range(value):
 
 print(answer)
 
-# Q105. Create a list and prompt the user for an 'old number' followed by a
-# 'new number.' If the 'old number' exists in the list, replace it with the 'new
-# number' provided by the user.
-
+# Q105. Create a list and prompt the user for an 'old number' followed by a 'new number.' If the 'old number' exists in the list, replace it with the 'new number' provided by the user.
 # Step 1: Create the list
 list_ = [1,2,3,4,5,6,6,7,8,9,10,11,12,13,14,15,16,17]
 
@@ -1217,8 +1166,7 @@ numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 numbers = [num for num in numbers if num % 2 != 0]
 print(number)
 
-# Q107. Ask the user for a number. Then, from a list of numbers, 
-# remove all the numbers that can be divided by the number the user entered.
+# Q107. Ask the user for a number. Then, from a list of numbers, remove all the numbers that can be divided by the number the user entered.
 
 # Original list
 list__ = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 15]
@@ -1239,7 +1187,6 @@ for i in list__:
 print("Filtered list:", list_)
  
 
-
 # 108. Generate a list of at least 10 numbers. Then, create two separate lists called 'odd' and 'even.' Put all the odd numbers from the original list into the 'odd' list, and all the even numbers into the 'even' list.
 
 list_ = [1,2,3,4,5,6,7,8,9,10]
@@ -1255,7 +1202,7 @@ for i in list_:
 print(odd_)
 print(even_)
 
-# q 109 Start by creating two separate lists with random numbers. Then, create a third list that merges the numbers from the first and second lists together.
+# Q-109 Start by creating two separate lists with random numbers. Then, create a third list that merges the numbers from the first and second lists together.
 list_ = [1, 2, 3, 3, 4, 5, 5, 5]
 list__ = [2, 43, 5, 5, 3, 5, 2, 1, 10]
 
@@ -1264,10 +1211,7 @@ list_new = list_ + list__
 
 print(list_new)
 
-
-# 110. Make a list of your own. And remove all the duplicates element from
-# that list.
-
+# Q-110. Make a list of your own. And remove all the duplicates element from that list.
 list_ = [1,1,1,1,1,3,3,3,2,3,4,5,7,8,6,9,0,10]
 list__ = []
 
@@ -1279,8 +1223,6 @@ print(list__)
 # Q111. Make a list. Then ask a number from user. If number exists in that list then print the position of the element else print -1.
 list_ = [1,2,3,4,5,56,7,8,9,9,0,2,3,4,5,68,7]
 num = int(input("enter the value = "))
-
-
 if num in list_:
     position = list_.index(num)
     print(position)
@@ -1298,8 +1240,7 @@ list__ = list_[::-1]
 print(list_)
 print(list__)
 
-#Q113. Write a program to find the average of all the numbers present in the list. (Do on your own)
-
+# Q113. Write a program to find the average of all the numbers present in the list. (Do on your own)
 list_ = [1,2,3,5,6,7,8,9,0,8,6,5,4,6]
 for i in list_:
     list__ = (i / len(list_) ) * 100
@@ -1322,9 +1263,7 @@ max_count = occurrences[max_element]
 print("Occurrences:", occurrences)
 print(f"Element with highest occurrence: {max_element} (appears {max_count} times)")
 
-
  # Q115. Write a program that has two lists and make a new list that contains only the common elements between them without duplicates
-
 a = [1,2,3,4,4,5,56,6,7,7]
 b = [1,4,56,7,8,8]
 c = []
@@ -1334,6 +1273,24 @@ for i in a:
         c.append(i)
 print(c)
 
+# Q116. Write a Python code to find the second largest element in a list without sorting
+def second_largest(nums):
+    if len(nums) < 2:
+        return None  # not enough elements
+    
+    first = second = float('-inf')  # initialize with negative infinity
+    
+    for num in nums:
+        if num > first:
+            second = first
+            first = num
+        elif first > num > second:  # strictly between first and second
+            second = num
+    
+    return second if second != float('-inf') else None
+# Example usage
+numbers = [10, 20, 4, 45, 99, 99, 33]
+print("Second largest:", second_largest(numbers))
 
 # Q117. Make a program that takes a list of integers and returns the product of all the elements
 
@@ -1356,16 +1313,6 @@ for num in list_:
         second_largest = num
 print(second_largest)
 
-
-
-# 117. Make a program that takes a list of integers and returns the product of all the elements.
-list_ = [1,2,3,4,4,5,5,65,6]
-list__ = 1
-for i in list_:
-    list__ = list__ * i
-
-print(list__)
-
 #Q 118  Write a program to find and print all prime numbers within a given list
 list_ = [1,2,3,3,4,45,5,6,6,7,87,8,8]
 list__ = []
@@ -1386,55 +1333,45 @@ list_b = list_[mid:]  # Second half
 print(list_a)
 print(list_b)
 
-
 #Q120. Write a program that swaps the first and last elements of a given list.
 
 list_ = [1,2,3,4,5,56,6,7,8,9]
 
 list_[0], list_[-1] = list_[-1], list_[0]
-
 print(list_)
 
-
-
 # Q121. Generate a list of squares of numbers from 1 to 10 using list comprehension
-
 square_ = [x**2 for x in range(1, 11)]
 print(square_)
 
 # Q122. Given a list of strings, create a new list containing the lengths of each string using list comprehension
 my_list = ["mirza", "yasir", "abdullah", "baig"]
-
 sample_list = [len(i) for i in my_list]
 print(sample_list)
-
 
 #Q123. Generate a list of strings where each string repeats itself three times, using list comprehension.
 my_list = ["mirza", "yasir", "abdullah", "baig"]
 sample_list = [i*3 for i in my_list]
 print(sample_list)
 
-
 # Q124. Generate a list of list using list comprehension where format should be [[1, ”ODD”], [2, “EVEN”], [3, ”ODD”]].
 my_list = [1,1,3,4,5,6,67,7,8,9,9,8]
 sample_list = [[i, "ODD"] if i % 2 != 0 else [i, "EVEN"] for i in my_list]
 print(sample_list)
 
-
+# -------------------------------
 # List Slicing Questions Practice
+# -------------------------------
+
 # Q125. Write a python program to reverse a list using slicing.
 list_ = [1,1,3,4,5,6,67,7,8,9,9,8]
 print(list_[::-1])
 
-
 # Q126. Write a python program to get every third element from a list using slicing.
-
 my_list = ["mirza", "yasir", "abdullah", "baig", "mirza", "yasir", "abdullah", "baig"]
 print(my_list[::3])
 
-# Q127. Implement a python program to split a list into two equal parts using
-# slicing. One list should contain 1st half and another list should contain 2nd
-# half
+# Q127. Implement a python program to split a list into two equal parts using Slicing. One list should contain 1st half and another list should contain 2nd half
 my_list = ["1", "2", "2", "4", "mirza", "yasir", "abdullah", "baig"]
 mid = len(my_list) // 2
 
@@ -1444,9 +1381,7 @@ list_b = my_list[mid:]
 print(list_a)
 print(list_b)
 
-
 # Q128. Implement a python program to get the last 'n' elements from a list using slicing.
-
 a = [1, 2, 3, 4, 5, 6, 6, 7, 78, 8, 9, 9, 0]
 n = int(input("Enter the nth value = "))
 
@@ -1476,15 +1411,15 @@ end = int(input("Enter end index: "))
 reversed_slice = a[start:end][::-1]
 print(reversed_slice)
 
-
+# -------------------------------
 # STRING METHODS - 1
+# -------------------------------
+
 # Q132. Ask a string from user. Count how many alphabets are there in that
 # string
 
 str_ = "YasirAbdullahBaig"
-
 count = 0
-
 for ch in str_:
     if ch.isalpha():
         count = count + 1
@@ -1510,13 +1445,10 @@ str_upper = str_.upper()
 
 print(str_upper)
 
-
 # Q135. Ask a string from user. Convert uppercase to lowercase and convert lowercase to uppercase and don’t change the other letters. (Do on your own)
 
 text = input("enter the string: ")
-
 result = " "
-
 
 for char in text:
     if char.isupper:
@@ -1526,12 +1458,10 @@ for char in text:
     else:
         result = result + char
 
-
 print(result)
 
 # Q136. Count the number of spaces in a string entered by user.
 str_ = "yasir            abdullah"
-
 print(str_.count(" "))
 
 # Q137. Ask a string from user. Print the count of how many alphabets, digits, spaces and symbols (everything else) are there in that string. (Do on your own)
@@ -1557,26 +1487,22 @@ print("Digits:", digits)
 print("Spaces:", spaces)
 print("Symbols:", symbols)
 
-
+# -------------------------------
 # STRING METHODS - 2
-
+# -------------------------------
 
 # Q138. Write a program to reverse the order of words.
-
 str_ = "yasir abdullah"
 reversed_str = " ".join(str_.split()[::-1])
 print(reversed_str)
 
-
 # Q139. Write a program that accepts a string and capitalizes the first letter of each word while converting all other letters to lowercase.
-
 str_ = input("Enter a string: ")
 
 # Capitalize first letter of each word & make others lowercase
 result = str_.title()
 
 print("Formatted string:", result)
-
 
 # Q140. Write a program that reverses each word in a sentence while maintaining the word order. For example, "Hello World" should become "olleH dlroW".
 str_ = "yasir abdullah"
@@ -1599,12 +1525,11 @@ camel_string = "helloWorldHowAreYou"
 snake_string = camel_to_snake(camel_string)
 print(snake_string)
 
-
-
+# -------------------------------
 # Dictionary iteration
-# Q142- Ask subject name and marks from the user and keep adding it to the dictionary?
- 
-#Ask total number of subjects
+# -------------------------------
+
+# Q142- Ask subject name and marks from the user and keep adding it to the dictionary Ask total number of subjects
 subject_count = int(input("Enter the total number of subjects: "))
 
 # Create an empty dictionary
@@ -1620,8 +1545,7 @@ for i in range(subject_count):
 print("\nSubjects and Marks:")
 print(subjects)
 
-# Q143. Convert two lists into a dictionary. Make two list on your own of
-# same length, and convert them to dictionary.
+# Q143. Convert two lists into a dictionary. Make two list on your own of same length, and convert them to dictionary.
 list_ = ['ten', 'twenty', 'thirty']
 list__ = [10, 20, 30]
 
@@ -1632,10 +1556,7 @@ for i in range(len(list_)):
 
 print(dic_)
 
-
-
-# Q144. Write a Python program to sum all the items in a dictionary.
-# Dictionary with key-value pairs
+# Q144. Write a Python program to sum all the items in a dictionary. Dictionary with key-value pairs
 dic_ = {'a': 10, 'b': 20, 'c': 30, 'd': 40}
 
 # Method 1: Using loop
@@ -1648,15 +1569,12 @@ print("Sum of all items:", total)
 # Method 2: Using sum() directly
 print("Sum of all items (using sum):", sum(dic_.values()))
 
-
-
 # Q145: Write a Python program to multiply all the items in a dictionary. (Do on your own)
 dic_ = {'a': 10, 'b': 20, 'c': 30, 'd': 40}
 total = 1
 for i in dic_.values():
     total *= i
 print(total)
-
 
 # Q146. Ask a string from user. Display the dictionary where each key is a character and value is the frequency of that character that comes in that string
 string = input("Enter a string: ")
@@ -1667,11 +1585,7 @@ for char in string:
 
 print("Character Frequency Dictionary:", freq)
 
-
-
-# Q147. Store “name” of a student as Key, “list of 5 marks” of that student as
-# a Value. Store atleast 5 student names. Print the sum and percentage of all
-# the students.
+# Q147. Store “name” of a student as Key, “list of 5 marks” of that student as a Value. Store atleast 5 student names. Print the sum and percentage of all the students.
 students = {
     "Ali": [80, 75, 90, 85, 70],
     "Sara": [90, 95, 88, 92, 85],
@@ -1685,10 +1599,7 @@ for name, marks in students.items():
     percentage = total / (len(marks) * 100) * 100
     print(f"{name}: Total = {total}, Percentage = {percentage:.2f}%")
 
-
-# Q148. Store marks of 5 dierent subjects in a dictionary. Ask subject name
-# as an input from the User. Print the marks of that subject entered by User.
-# If subject does not exist, print “Invalid”.
+# Q148. Store marks of 5 dierent subjects in a dictionary. Ask subject name as an input from the User. Print the marks of that subject entered by User. If subject does not exist, print “Invalid”.
 marks = {
     "Math": 85,
     "English": 78,
@@ -1704,9 +1615,7 @@ if subject in marks:
 else:
     print("Invalid")
 
-# Q149. Store name as a Key, and 5 marks in a List as a value in dictionary.
-# Store details of at least 5 students. Print the name of the student who got
-# highest marks
+# Q149. Store name as a Key, and 5 marks in a List as a value in dictionary. Store details of at least 5 students. Print the name of the student who got highest marks
 
 students = {
     "Ali": [80, 75, 90, 85, 70],
@@ -1728,8 +1637,7 @@ for name, marks in students.items():
 print(f"Topper: {highest_student} with {highest_marks} marks")
 
 
-# Q150. Write a Python program to combine two dictionary by adding values
-# for common keys
+# Q150. Write a Python program to combine two dictionary by adding values for common keys
 dict1 = {"a": 10, "b": 20, "c": 30}
 dict2 = {"b": 5, "c": 15, "d": 25}
 combined = dict1.copy()
@@ -1737,7 +1645,10 @@ for key, value in dict2.items():
     combined[key] = combined.get(key, 0) + value
 print("Combined Dictionary:", combined)
 
+# -------------------------------
 # Questions for sets in Python
+# -------------------------------
+
 # Q151 Create a set containing numbers from 1 to 5. Print the set and its type.
 sets_ = {1, 2, 3, 4, 5}
 print(sets_)         # Output: {1, 2, 3, 4, 5}
@@ -1754,7 +1665,6 @@ sets_ = {1, 2, 3}
 sets_.add(2)   # adding duplicate
 print(sets_)   # Output: {1, 2, 3}
 
-
 ## Q154 How do you remove an item from a set?
 sets_ = {1, 2, 3, 4, 5, 6}
 sets_.remove(2)
@@ -1763,13 +1673,12 @@ sets_.discard(10)  # no error
 
 # # Q155 How do you check if "apple" is in a set?
 sets_ = {"apple", "banana", "orange"}
-
 if "apple" in sets_:
     print("Yes, apple is in the set")
 
 ## Q156 Which data type is not allowed inside a set?
 # Invalid
-# sets_ = {[1,2,3], {"a":1}}   ❌ will throw error
+# sets_ = {[1,2,3], {"a":1}}  will throw error
 # Valid
 sets_ = {(1, 2), "apple", 10}
 print(sets_)
@@ -1781,7 +1690,6 @@ print(sets_)
 # Duplicates	          Allows duplicates	        No duplicates
 # Mutable	                     Yes	            Yes (but elements must be immutable)
 # Syntax                     	[ ]	                    { }
-
 
 # Q158. Given two lists a, b. Check if two lists have at least one element
 # common in them
@@ -1801,7 +1709,6 @@ list3 = [5, 6, 7, 8, 9]
 
 # Convert to sets and find intersection
 common = set(list1) & set(list2) & set(list3)
-
 print("Common elements in all three lists:", common)
 
 # Q160. Create 3 sets of your own, find the union of three sets.
@@ -1842,17 +1749,16 @@ string = input("Enter a string: ")
 
 # Convert to set to remove duplicates
 result = "".join(set(string))
-
 print("String after removing duplicates:", result)
 
-
+# -------------------------------
 # Functions In python
+# -------------------------------
 
 # Q166. Write a function that accepts an integer and prints the multiplication table for that number up to 10.
 def multiplicationfunc(n):
     for i in range(1, 10):
         print(f"{n} X {i} = {n * i}")
-
 
 # Q167. Write a function that accepts an integer and prints whether it is odd or even.
 def odd_or_even(n):
@@ -1864,7 +1770,6 @@ def odd_or_even(n):
 # Example:
 # odd_or_even(7)
 
-
 # Q168. Function to find the largest of three numbers
 def largest_of_three(a, b, c):
     largest = max(a, b, c)
@@ -1872,7 +1777,6 @@ def largest_of_three(a, b, c):
 
 # Example:
 # largest_of_three(10, 20, 15)
-
 
 # Q169. Q169. Write a function that takes an integer and prints whether it is a prime number.
 def is_prime(n):
@@ -1888,7 +1792,6 @@ def is_prime(n):
 # Example:
 # is_prime(29)
 
-
 # Q170. Write a function that takes a list of numbers and prints the sum and average of these numbers.
 def sum_and_average(numbers):
     total = sum(numbers)
@@ -1897,7 +1800,6 @@ def sum_and_average(numbers):
 
 # Example:
 # sum_and_average([10, 20, 30, 40])
-
 
 # Q171. Write a function that accepts a string and prints the frequency of each character in the string.
 def char_frequency(s):
@@ -1910,7 +1812,6 @@ def char_frequency(s):
 
 # Example:
 # char_frequency("programming")
-
 
 # Q172. Write a function that takes a string and prints whether it is a palindrome
 def is_palindrome(s):
