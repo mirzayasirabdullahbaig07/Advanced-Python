@@ -1820,3 +1820,27 @@ print("After removing all elements:", myset)
 # Q162. Write a Python program to find the length of a set.
 myset = {10, 20, 30, 40}
 print("Length of the set:", len(myset))
+
+# Q163. Write a Python program to check if two given sets have no elements in common.
+set1 = {1, 2, 3}
+set2 = {4, 5, 6}
+
+if set1.isdisjoint(set2):
+    print("The sets have no elements in common.")
+else:
+    print("The sets have common elements.")
+
+# Q164. Write a Python program to find elements in a given set that are not in another set.
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7}
+
+diff = set1 - set2
+print("Elements in set1 but not in set2:", diff)
+
+# Q165. Ask a string from user, remove all the duplicates from that string and print that string again (order doesn’t matter).
+string = input("Enter a string: ")
+
+# Convert to set to remove duplicates
+result = "".join(set(string))
+
+print("String after removing duplicates:", result)
