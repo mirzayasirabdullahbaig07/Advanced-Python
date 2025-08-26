@@ -1803,3 +1803,16 @@ list3 = [5, 6, 7, 8, 9]
 common = set(list1) & set(list2) & set(list3)
 
 print("Common elements in all three lists:", common)
+
+# Q160. Create 3 sets of your own, find the union of three sets.
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+set3 = {5, 6, 7}
+
+union_set = set1 | set2 | set3
+print("Union of three sets:", union_set)
+
+# Q161. Write a Python program to remove all elements from a given set.
+myset = {1, 2, 3, 4, 5}
+myset.clear()
+print("After removing all elements:", myset)
