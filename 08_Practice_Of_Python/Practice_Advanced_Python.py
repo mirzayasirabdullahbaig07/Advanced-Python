@@ -1844,3 +1844,80 @@ string = input("Enter a string: ")
 result = "".join(set(string))
 
 print("String after removing duplicates:", result)
+
+
+# Functions In python
+
+# Q166. Write a function that accepts an integer and prints the multiplication table for that number up to 10.
+def multiplicationfunc(n):
+    for i in range(1, 10):
+        print(f"{n} X {i} = {n * i}")
+
+
+# Q167. Write a function that accepts an integer and prints whether it is odd or even.
+def odd_or_even(n):
+    if n % 2 == 0:
+        print(f"{n} is Even")
+    else:
+        print(f"{n} is Odd")
+
+# Example:
+# odd_or_even(7)
+
+
+# Q168. Function to find the largest of three numbers
+def largest_of_three(a, b, c):
+    largest = max(a, b, c)
+    print(f"The largest number is: {largest}")
+
+# Example:
+# largest_of_three(10, 20, 15)
+
+
+# Q169. Q169. Write a function that takes an integer and prints whether it is a prime number.
+def is_prime(n):
+    if n <= 1:
+        print(f"{n} is not a Prime number")
+        return
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            print(f"{n} is not a Prime number")
+            return
+    print(f"{n} is a Prime number")
+
+# Example:
+# is_prime(29)
+
+
+# Q170. Write a function that takes a list of numbers and prints the sum and average of these numbers.
+def sum_and_average(numbers):
+    total = sum(numbers)
+    avg = total / len(numbers) if numbers else 0
+    print(f"Sum = {total}, Average = {avg}")
+
+# Example:
+# sum_and_average([10, 20, 30, 40])
+
+
+# Q171. Write a function that accepts a string and prints the frequency of each character in the string.
+def char_frequency(s):
+    freq = {}
+    for char in s:
+        freq[char] = freq.get(char, 0) + 1
+    print("Character Frequency:")
+    for k, v in freq.items():
+        print(f"{k}: {v}")
+
+# Example:
+# char_frequency("programming")
+
+
+# Q172. Write a function that takes a string and prints whether it is a palindrome
+def is_palindrome(s):
+    if s == s[::-1]:
+        print(f"'{s}' is a Palindrome")
+    else:
+        print(f"'{s}' is not a Palindrome")
+
+# Example:
+# is_palindrome("madam")    
