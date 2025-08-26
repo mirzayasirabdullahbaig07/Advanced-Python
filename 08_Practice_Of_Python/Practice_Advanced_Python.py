@@ -1794,3 +1794,12 @@ if common:
 else:
     print("No common elements.")
 
+# Q159. Python program to find common elements in three lists using sets.
+list1 = [1, 2, 3, 4, 5]
+list2 = [3, 4, 5, 6, 7]
+list3 = [5, 6, 7, 8, 9]
+
+# Convert to sets and find intersection
+common = set(list1) & set(list2) & set(list3)
+
+print("Common elements in all three lists:", common)
