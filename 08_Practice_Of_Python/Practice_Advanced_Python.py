@@ -1816,3 +1816,7 @@ print("Union of three sets:", union_set)
 myset = {1, 2, 3, 4, 5}
 myset.clear()
 print("After removing all elements:", myset)
+
+# Q162. Write a Python program to find the length of a set.
+myset = {10, 20, 30, 40}
+print("Length of the set:", len(myset))
