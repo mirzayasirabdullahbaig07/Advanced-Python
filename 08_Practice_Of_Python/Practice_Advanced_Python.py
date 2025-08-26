@@ -1783,3 +1783,14 @@ print(sets_)
 # Syntax                     	[ ]	                    { }
 
 
+# Q158. Given two lists a, b. Check if two lists have at least one element
+# common in them
+list_ = [1, 2, 3, 4, 5, 5]
+list_1 = [2, 9, 8, 7, 6]
+# Convert lists to sets and find intersection
+common = set(list_) & set(list_1)
+if common:
+    print("Yes, common elements found:", common)
+else:
+    print("No common elements.")
+
