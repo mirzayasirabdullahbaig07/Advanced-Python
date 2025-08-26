@@ -1732,33 +1732,54 @@ print(f"Topper: {highest_student} with {highest_marks} marks")
 # for common keys
 dict1 = {"a": 10, "b": 20, "c": 30}
 dict2 = {"b": 5, "c": 15, "d": 25}
-
 combined = dict1.copy()
-
 for key, value in dict2.items():
     combined[key] = combined.get(key, 0) + value
-
 print("Combined Dictionary:", combined)
 
-# some questions are pending
 # Questions for sets in Python
 # Q151 Create a set containing numbers from 1 to 5. Print the set and its type.
-sets_ = {1,2,3,4,5}
+sets_ = {1, 2, 3, 4, 5}
+print(sets_)         # Output: {1, 2, 3, 4, 5}
+print(type(sets_))   # Output: <class 'set'>
 
+## Q152 Can a set have duplicate values?
+# No, sets do not allow duplicate values. If you try to add duplicates, they are ignored.
+sets_ = {1, 2, 2, 3, 4}
+print(sets_)   # Output: {1, 2, 3, 4}
+
+## Q153 What happens if you add the same element twice in a set?
+# Nothing changes — the element will still appear only once.
+sets_ = {1, 2, 3}
+sets_.add(2)   # adding duplicate
+print(sets_)   # Output: {1, 2, 3}
+
+
+## Q154 How do you remove an item from a set?
+sets_ = {1, 2, 3, 4, 5, 6}
+sets_.remove(2)
+print(sets_)   # Output: {1, 3, 4, 5, 6}
+sets_.discard(10)  # no error
+
+# # Q155 How do you check if "apple" is in a set?
+sets_ = {"apple", "banana", "orange"}
+
+if "apple" in sets_:
+    print("Yes, apple is in the set")
+
+## Q156 Which data type is not allowed inside a set?
+# Invalid
+# sets_ = {[1,2,3], {"a":1}}   ❌ will throw error
+# Valid
+sets_ = {(1, 2), "apple", 10}
 print(sets_)
-print(type(sets_))
 
-# Can a set have duplicate values?
+## Q157 What is the difference between a list and a set?
+# Feature	                     List	               Set
+# Order	                        Ordered	              Unordered
+# Indexing	              Supports indexing      	No indexing
+# Duplicates	          Allows duplicates	        No duplicates
+# Mutable	                     Yes	            Yes (but elements must be immutable)
+# Syntax                     	[ ]	                    { }
 
-# What happens if you add the same element twice in a set?
 
-# How do you remove an item from a set?
-
-# How do you check if "apple" is in a set?
-
-# Which data type is not allowed inside a set?
-
-# What is the difference between a list and a set?
-# some questions are still pending
-
-# some questions are peding will update soon
